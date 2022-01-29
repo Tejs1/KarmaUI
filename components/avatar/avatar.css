@@ -1,11 +1,11 @@
 @import url(./basic.css);
 
-.avatar.sm {
+.karma.avatar.sm {
   height: 2rem;
   width: 2rem;
 }
-.avatar.md,
-.avatar {
+.karma.avatar.md,
+.karma.avatar {
   height: 2.5rem;
   width: 2.5rem;
   object-fit: cover;
@@ -13,47 +13,47 @@
   background-color: darkgrey;
 }
 
-.avatar.lg {
+.karma.avatar.lg {
   height: 4rem;
   width: 4rem;
 }
-.avatar.xl {
+.karma.avatar.xl {
   height: 5rem;
   width: 5rem;
 }
-.avatar.xxl {
+.karma.avatar.xxl {
   height: 6rem;
   width: 6rem;
 }
 
-.avatar.rs {
+.karma.avatar.rs {
   border-radius: 5px;
 }
 
-.avatar.rm,
-.avatar.r {
+.karma.avatar.rm,
+.karma.avatar.r {
   border-radius: 10px;
 }
-.avatar.rl {
+.karma.avatar.rl {
   border-radius: 15px;
 }
-.avatar.rf,
-.avatar.circle {
+.karma.avatar.rf,
+.karma.avatar.circle {
   border-radius: 50%;
 }
-.avatar.br {
+.karma.br {
   border: 2px solid darkgrey;
 }
-.avatar.br.black {
+.karma.br.black {
   border: 2px solid black;
 }
-.avatar.br.white {
+.karma.br.white {
   border: 2px solid white;
 }
-.avatar.br.red {
+.karma.br.red {
   border: 2px solid red;
 }
-.avatar.br.green {
+.karma.br.green {
   border: 2px solid green;
 }
 
