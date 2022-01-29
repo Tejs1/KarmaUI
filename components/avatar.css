@@ -1,0 +1,70 @@
+@@ -0,0 +1,69 @@
+@import url(./basic.css);
+
+.avatar.sm {
+  height: 2rem;
+  width: 2rem;
+}
+.avatar.md,
+.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: cover;
+  border-radius: 0;
+  background-color: darkgrey;
+}
+
+.avatar.lg {
+  height: 4rem;
+  width: 4rem;
+}
+.avatar.xl {
+  height: 5rem;
+  width: 5rem;
+}
+.avatar.xxl {
+  height: 6rem;
+  width: 6rem;
+}
+
+.avatar.rs {
+  border-radius: 5px;
+}
+
+.avatar.rm,
+.avatar.r {
+  border-radius: 10px;
+}
+.avatar.rl {
+  border-radius: 15px;
+}
+.avatar.rf,
+.avatar.circle {
+  border-radius: 50%;
+}
+.avatar.br {
+  border: 2px solid darkgrey;
+}
+.avatar.br.black {
+  border: 2px solid black;
+}
+.avatar.br.white {
+  border: 2px solid white;
+}
+.avatar.br.red {
+  border: 2px solid red;
+}
+.avatar.br.green {
+  border: 2px solid green;
+}
+
+.avatar-container {
+  /* max-width: 40vw; */
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 1rem;
+}
