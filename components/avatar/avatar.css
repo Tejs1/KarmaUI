@@ -1,0 +1,69 @@
+@import url(./basic.css);
+
+.karma.avatar.sm {
+  height: 2rem;
+  width: 2rem;
+}
+.karma.avatar.md,
+.karma.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: cover;
+  border-radius: 0;
+  background-color: darkgrey;
+}
+
+.karma.avatar.lg {
+  height: 4rem;
+  width: 4rem;
+}
+.karma.avatar.xl {
+  height: 5rem;
+  width: 5rem;
+}
+.karma.avatar.xxl {
+  height: 6rem;
+  width: 6rem;
+}
+
+.karma.avatar.rs {
+  border-radius: 5px;
+}
+
+.karma.avatar.rm,
+.karma.avatar.r {
+  border-radius: 10px;
+}
+.karma.avatar.rl {
+  border-radius: 15px;
+}
+.karma.avatar.rf,
+.karma.avatar.circle {
+  border-radius: 50%;
+}
+.karma.br {
+  border: 2px solid darkgrey;
+}
+.karma.br.black {
+  border: 2px solid black;
+}
+.karma.br.white {
+  border: 2px solid white;
+}
+.karma.br.red {
+  border: 2px solid red;
+}
+.karma.br.green {
+  border: 2px solid green;
+}
+
+.avatar-container {
+  /* max-width: 40vw; */
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 1rem;
+}
