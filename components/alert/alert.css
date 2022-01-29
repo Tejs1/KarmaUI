@@ -1,0 +1,63 @@
+@import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
+@import url(./basic.css);
+
+:root {
+  --info-bg: #d7f1ff;
+  --info: #98d9fe;
+  --info-text: #3bb3fc;
+
+  --success-bg: #c2f3d6;
+  --success: #96eab7;
+  --success-text: #22ab5d;
+
+  --danger-bg: #fee0e3;
+  --danger: #ff99a6;
+  --danger-text: #fc465b;
+
+  --warning-bg: #ffdb9a;
+  --warning: #fed180;
+  --warning-text: #ca8501;
+}
+
+.alert-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.karma.alert.msg {
+  margin: 0rem 0.5rem;
+}
+.karma.alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: max-content;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  align-items: center;
+  border-radius: 5px;
+}
+.karma.info.alert {
+  background-color: var(--info-bg);
+  border-left: 0.5rem solid var(--info);
+  color: var(--info-text);
+}
+
+.karma.success.alert {
+  background-color: var(--success-bg);
+  border-left: 0.5rem solid var(--success);
+  color: var(--success-text);
+}
+
+.karma.danger.alert {
+  background-color: var(--danger-bg);
+  border-left: 0.5rem solid var(--danger);
+  color: var(--danger-text);
+}
+
+.karma.warning.alert {
+  background-color: var(--warning-bg);
+  border-left: 0.5rem solid var(--warning);
+  color: var(--warning-text);
+}
