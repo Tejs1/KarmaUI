@@ -1,5 +1,6 @@
 @import url(../basic.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
 :root {
   --info: #98d9fe;
   --info-text: #3bb3fc;
@@ -47,10 +48,10 @@
 }
 
 .karma.warning {
-  background-color: var(--warning-text);
+  background-color: var(--warning);
 }
 .karma.warning:hover {
-  background: var(--warning);
+  background: var(--warning-text);
 }
 
 .karma.danger {
@@ -95,13 +96,13 @@
 }
 
 .karma.warning.secondary {
-  color: var(--warning-text);
+  color: var(--warning);
   background-color: var(--white);
-  border: solid 2px var(--warning-text);
+  border: solid 2px var(--warning);
 }
 .karma.warning.secondary:hover {
   color: var(--white);
-  background: var(--warning-text);
+  background: var(--warning);
 }
 
 .karma.danger.secondary {
@@ -130,7 +131,38 @@
   color: var(--info-text);
   border: solid 2px var(--info-text);
 }
-.karma.btn.info.icon {
+.karma.btn.icon {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.karma.btn.fab,
+.karma.btn.fab.md {
+  z-index: 1;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.karma.btn.fab.sm {
+  font-size: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.karma.btn.fab.lg {
+  font-size: 2rem;
+  height: 4rem;
+  width: 4rem;
+}
+.karma.btn.fab-ex {
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0;
+  padding: 0.5rem 1rem;
+}
+.karma.btn.fab-ex i {
+  font-size: 1.5rem;
+  padding: 0;
 }
