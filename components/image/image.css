@@ -1,0 +1,29 @@
+@import url(../basic.css);
+
+.km-img-sm {
+  object-fit: cover;
+  width: 6rem;
+  height: 6rem;
+}
+.km-img-md {
+  object-fit: cover;
+  width: 8rem;
+  height: 8rem;
+}
+.km-img-lg {
+  object-fit: cover;
+  width: 12rem;
+  height: 12rem;
+}
+.km-img-round {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Auto resize image to fit parent div css  */
+
+.km-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}

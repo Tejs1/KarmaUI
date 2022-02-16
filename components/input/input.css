@@ -1,0 +1,82 @@
+@import url(../basic.css);
+.km-component {
+  max-width: 30vw;
+}
+
+input.km-input {
+  background: var(--body);
+}
+.km-input-div {
+  display: flex;
+  flex-direction: column;
+}
+.km-input {
+  padding: 0.6rem;
+  border: 1px solid var(--blue-500);
+  outline: none;
+}
+
+.km-input-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--red-500);
+  color: var(--red-500);
+}
+.km-input-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--green-500);
+  color: var(--green-500);
+}
+
+.km-input-error .km-error-icon {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  outline: none;
+  background: var(--body);
+}
+.km-input-check .km-check-icon {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  outline: none;
+  background: var(--body);
+}
+.km-input-error span,
+.km-input-check span {
+  margin: 0 0.5rem;
+}
+
+.km-checkbox[type="checkbox"],
+.km-radio[type="radio"] {
+  accent-color: var(--green-500);
+}
+
+/* form styles  */
+.km-form {
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+  border: 1px solid var(--gray-300);
+  color: var(--text);
+}
+.km-form > * {
+  margin: 1rem 0rem;
+}
+
+.km-form-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  font-weight: 700;
+  background: var(--blue-500);
+  color: var(--gray-300);
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+.km-form-btn:hover {
+  background: var(--blue-700);
+}
