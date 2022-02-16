@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div class="km-component">
+      <h2>Basic Input</h2>
+      <div class="km-input-div">
+        <label for="km-input">Label*</label>
+        <input
+          type="text"
+          name="km-input"
+          class="km-input"
+          placeholder="Basic input"
+        />
+      </div>
+    </div>
+
+    <div class="km-component">
+      <h2>Input with Icons</h2>
+      <div class="km-input-error">
+        <input
+          type="text"
+          class="km-error-icon"
+          name="input"
+          placeholder="input text"
+        />
+        <span class="material-icons">warning_amber</span>
+      </div>
+
+      <div class="km-input-check">
+        <input
+          type="text"
+          class="km-check-icon"
+          name="input"
+          placeholder="input text"
+        />
+        <span class="material-icons">done</span>
+      </div>
+    </div>
+
+    <div class="km-component">
+      <h2>Types of Input</h2>
+      <div class="km-checkbox-div">
+        <input type="checkbox" checked id="checkbox1" class="km-checkbox" />
+        <label for="checkbox1">Checked</label>
+      </div>
+      <div class="km-checkbox-div">
+        <input type="checkbox" id="checkbox2" class="km-checkbox" disabled />
+        <label for="checkbox2">Checkbox</label>
+      </div>
+      <div class="km-radio-div">
+        <input type="radio" name="radio" id="radio1" class="km-radio" />
+        <label for="radio1">Male</label>
+      </div>
+      <div class="km-radio-div">
+        <input type="radio" class="km-radio" name="radio" id="radio2" />
+        <label for="radio2">Female</label>
+      </div>
+    </div>
+    <div class="km-component">
+      <h2>Form</h2>
+      <form class="km-form">
+        <h2>Sign up</h2>
+        <div class="km-input-div">
+          <input
+            type="text"
+            name="km-input"
+            class="km-input"
+            placeholder="Enter name..."
+            required
+          />
+        </div>
+        <div class="km-input-error">
+          <input
+            type="email"
+            class="km-error-icon"
+            name="input"
+            placeholder="Email..."
+            required
+          />
+          <span class="material-icons">warning_amber</span>
+        </div>
+        <div class="km-input-check">
+          <input
+            type="tel"
+            class="km-check-icon"
+            name="input"
+            placeholder="Phone No..."
+            required
+          />
+          <span class="material-icons">done</span>
+        </div>
+        <div class="km-checkbox-div">
+          <input type="checkbox" id="checkbox3" required class="km-checkbox" />
+          <label for="checkbox3">Privacy</label>
+        </div>
+        <div class="km-radio-div">
+          <input
+            type="radio"
+            name="radio"
+            id="radio3"
+            required
+            class="km-radio"
+          />
+          <label for="radio3">Male</label>
+        </div>
+        <div class="km-radio-div">
+          <input
+            type="radio"
+            name="radio"
+            id="radio4"
+            required
+            class="km-radio"
+          />
+          <label for="radio4">Female</label>
+        </div>
+        <button class="km-form-btn" type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
