@@ -1,168 +1,137 @@
 @import url(../basic.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-
-:root {
-  --info: #98d9fe;
-  --info-text: #3bb3fc;
-
-  --success: #96eab7;
-  --success-text: #22ab5d;
-
-  --danger: #ff99a6;
-  --danger-text: #fc465b;
-
-  --warning: #fed180;
-  --warning-text: #ca8501;
-
-  --dark-grey: #e7e7e7;
-  --black: black;
-  --white: white;
-  --grey: #ddd;
-}
-.karma.section {
-  margin-bottom: 2rem;
-}
-
-.karma.btn {
+.km-btn {
   border: none;
-  margin: 0;
-  color: var(--black);
-  padding: 0.5rem 28px;
+  padding: 0.5rem 1.2rem;
   cursor: pointer;
-  font-size: 1.3rem;
-  border-radius: 5px;
-}
-
-.karma.success {
-  background-color: var(--success);
-}
-.karma.success:hover {
-  background-color: var(--success-text);
-}
-
-.karma.info {
-  background-color: var(--info);
-}
-.karma.info:hover {
-  background: var(--info-text);
-}
-
-.karma.warning {
-  background-color: var(--warning);
-}
-.karma.warning:hover {
-  background: var(--warning-text);
-}
-
-.karma.danger {
-  background-color: var(--danger);
-}
-.karma.danger:hover {
-  background: var(--danger-text);
-}
-
-.karma.default {
-  background-color: --dark-grey;
-  color: var(--black);
-}
-.karma.default:hover {
-  background: var(--grey);
-}
-
-.karma.btn.secondary {
-  padding: 0.375rem 26px;
-}
-.karma.success.secondary {
-  background-color: var(--white);
-  color: var(--success);
-  border: solid 2px var(--success);
-}
-
-.karma.success.secondary:hover {
-  background-color: var(--success);
-  color: var(--white);
-  border: solid 2px var(--success);
-}
-
-.karma.info.secondary {
-  color: var(--info);
-  background-color: var(--white);
-  border: solid 2px var(--info);
-}
-.karma.info.secondary:hover {
-  color: var(--white);
-  background-color: var(--info);
-  border: solid 2px var(--info);
-}
-
-.karma.warning.secondary {
-  color: var(--warning);
-  background-color: var(--white);
-  border: solid 2px var(--warning);
-}
-.karma.warning.secondary:hover {
-  color: var(--white);
-  background: var(--warning);
-}
-
-.karma.danger.secondary {
-  color: var(--danger);
-  background-color: var(--white);
-  border: solid 2px var(--danger);
-}
-.karma.danger.secondary:hover {
-  color: var(--white);
-  background: var(--danger);
-}
-
-.karma.default.secondary {
-  color: var(--black);
-  background-color: var(--white);
-  border: solid 2px var(--black);
-}
-.karma.default.secondary:hover {
-  background: var(--grey);
-}
-.karma.btn.link {
-  color: var(--info);
-  border: solid 2px var(--info);
-}
-.karma.btn.link:hover {
-  color: var(--info-text);
-  border: solid 2px var(--info-text);
-}
-.karma.btn.icon {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.karma.btn.fab,
-.karma.btn.fab.md {
-  z-index: 1;
-  padding: 0;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  height: 3rem;
-  width: 3rem;
-}
-
-.karma.btn.fab.sm {
-  font-size: 1rem;
-  height: 2rem;
-  width: 2rem;
-}
-
-.karma.btn.fab.lg {
-  font-size: 2rem;
-  height: 4rem;
-  width: 4rem;
-}
-.karma.btn.fab-ex {
+  background: var(--body);
+  border-radius: 3px;
+  display: flex;
   align-items: center;
-  border-radius: 2rem;
-  padding: 0;
-  padding: 0.5rem 1rem;
 }
-.karma.btn.fab-ex i {
-  font-size: 1.5rem;
-  padding: 0;
+
+/* Default buttons styles  */
+.km-btn.km-red {
+  background: var(--red-500);
+  color: var(--gray-100);
+  transition: all 250ms ease;
+}
+.km-btn.km-red:hover {
+  background: var(--red-700);
+  color: var(--gray-100);
+}
+.km-btn.km-blue {
+  background: var(--blue-500);
+  color: var(--gray-100);
+  transition: all 250ms ease;
+}
+.km-btn.km-blue:hover {
+  background: var(--blue-700);
+  color: var(--gray-100);
+}
+.km-btn.km-green {
+  background: var(--green-500);
+  color: var(--gray-100);
+  transition: all 250ms ease;
+}
+.km-btn.km-green:hover {
+  background: var(--green-700);
+  color: var(--gray-100);
+}
+.km-btn.km-gray {
+  background: var(--gray-500);
+  color: var(--gray-100);
+  transition: all 250ms ease;
+}
+.km-btn.km-gray:hover {
+  background: var(--gray-700);
+  color: var(--gray-100);
+}
+
+/* outerline buttons styles  */
+.km-btn.km-red-bd {
+  border: 1px solid var(--red-300);
+  color: var(--text);
+  transition: all 250ms ease;
+}
+.km-btn.km-red-bd:hover {
+  border: 1px solid var(--red-500);
+  color: var(--heading);
+}
+.km-btn.km-blue-bd {
+  border: 1px solid var(--blue-300);
+  color: var(--text);
+  transition: all 250ms ease;
+}
+.km-btn.km-blue-bd:hover {
+  border: 1px solid var(--blue-500);
+  color: var(--heading);
+}
+.km-btn.km-green-bd {
+  border: 1px solid var(--green-300);
+  color: var(--text);
+  transition: all 250ms ease;
+}
+.km-btn.km-green-bd:hover {
+  border: 1px solid var(--green-500);
+  color: var(--heading);
+}
+.km-btn.km-gray-bd {
+  border: 1px solid var(--gray-300);
+  color: var(--text);
+  transition: all 250ms ease;
+}
+.km-btn.km-gray-bd:hover {
+  border: 1px solid var(--gray-500);
+  color: var(--heading);
+}
+
+/* E-commerce buttons  */
+
+.km-btn.km-addcart {
+  border: 1px solid var(--orange-300);
+  color: var(--orange-500);
+  transition: all 250ms ease;
+}
+.km-btn.km-addcart:hover {
+  border: 1px solid var(--orange-500);
+}
+.km-btn.km-wishlist {
+  border: 1px solid var(--red-300);
+  color: var(--red-500);
+  transition: all 250ms ease;
+}
+.km-btn.km-wishlist:hover {
+  border: 1px solid var(--red-500);
+}
+.km-btn.km-pay {
+  border: 1px solid var(--green-300);
+  color: var(--green-500);
+  transition: all 250ms ease;
+}
+.km-btn.km-pay:hover {
+  border: 1px solid var(--green-500);
+}
+.km-btn.km-store {
+  border: 1px solid var(--blue-300);
+  color: var(--blue-500);
+  transition: all 250ms ease;
+}
+.km-btn.km-store:hover {
+  border: 1px solid var(--blue-500);
+}
+.km-btn .ei {
+  padding-right: 0.5rem;
+}
+
+/* Floating buttons  */
+.km-float {
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 250ms ease;
+  color: var(--gray-700);
+  background: var(--gray-300);
+}
+.km-float:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
