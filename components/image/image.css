@@ -2,18 +2,18 @@
 
 .km-img-sm {
   object-fit: cover;
-  width: 96px;
-  height: 96px;
+  width: 6rem;
+  height: 6rem;
 }
 .km-img-md {
   object-fit: cover;
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
 }
 .km-img-lg {
   object-fit: cover;
-  width: 192px;
-  height: 192px;
+  width: 12rem;
+  height: 12rem;
 }
 .km-img-round {
   object-fit: cover;
