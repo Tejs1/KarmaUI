@@ -2,32 +2,32 @@
 @import url(../avatar/avatar.css);
 @import url(../basic.css);
 
-.karma .bubble {
+.km .bubble {
   position: absolute;
   border-radius: 50%;
-  background-color: rgb(99, 99, 212);
-  color: whitesmoke;
+  background-color: var(--indigo-300);
+  color: var(--grey-100);
   transform: translate(-50%, -50%);
   text-align: center;
   height: 18px;
   min-width: 18px;
 }
-.karma.badge {
+.km.badge {
   position: relative;
 }
-.karma .bubble.m {
+.km .bubble.m {
   height: 1.5rem;
   padding: 0px 3px;
   font-size: 1.3rem;
 }
-.karma .bubble.l {
+.km .bubble.l {
   height: 2rem;
   padding: 3px 6px;
   font-size: 1.7rem;
 }
-.karma .bubble.icon {
+.km .bubble.icon {
   transform: translate(-60%, -40%);
 }
-.karma .bubble.m.icon {
+.km .bubble.m.icon {
   transform: translate(-60%, -30%);
 }

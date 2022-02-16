@@ -1,60 +1,60 @@
-@import url(./basic.css);
+@import url(../basic.css);
 
-.karma.avatar.sm {
+.km.avatar.sm {
   height: 2rem;
   width: 2rem;
 }
-.karma.avatar.md,
-.karma.avatar {
+.km.avatar.md,
+.km.avatar {
   height: 2.5rem;
   width: 2.5rem;
   object-fit: cover;
   border-radius: 0;
-  background-color: darkgrey;
+  background-color: var(--gray-100);
 }
 
-.karma.avatar.lg {
+.km.avatar.lg {
   height: 4rem;
   width: 4rem;
 }
-.karma.avatar.xl {
+.km.avatar.xl {
   height: 5rem;
   width: 5rem;
 }
-.karma.avatar.xxl {
+.km.avatar.xxl {
   height: 6rem;
   width: 6rem;
 }
 
-.karma.avatar.rs {
+.km.avatar.rs {
   border-radius: 5px;
 }
 
-.karma.avatar.rm,
-.karma.avatar.r {
+.km.avatar.rm,
+.km.avatar.r {
   border-radius: 10px;
 }
-.karma.avatar.rl {
+.km.avatar.rl {
   border-radius: 15px;
 }
-.karma.avatar.rf,
-.karma.avatar.circle {
+.km.avatar.rf,
+.km.avatar.circle {
   border-radius: 50%;
 }
-.karma.br {
-  border: 2px solid darkgrey;
+.km.br {
+  border: 2px solid var(--gray-900);
 }
-.karma.br.black {
-  border: 2px solid black;
+.km.br.black {
+  border: 2px solid var(--black-700);
 }
-.karma.br.white {
-  border: 2px solid white;
+.km.br.white {
+  border: 2px solid var(--gray-100);
 }
-.karma.br.red {
-  border: 2px solid red;
+.km.br.red {
+  border: 2px solid var(--black-700);
 }
-.karma.br.green {
-  border: 2px solid green;
+.km.br.green {
+  border: 2px solid var(--black-700);
 }
 
 .avatar-container {

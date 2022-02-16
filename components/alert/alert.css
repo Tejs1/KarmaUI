@@ -1,63 +1,47 @@
-@import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
-@import url(./basic.css);
+@import url(../basic.css);
 
-:root {
-  --info-bg: #d7f1ff;
-  --info: #98d9fe;
-  --info-text: #3bb3fc;
-
-  --success-bg: #c2f3d6;
-  --success: #96eab7;
-  --success-text: #22ab5d;
-
-  --danger-bg: #fee0e3;
-  --danger: #ff99a6;
-  --danger-text: #fc465b;
-
-  --warning-bg: #ffdb9a;
-  --warning: #fed180;
-  --warning-text: #ca8501;
+.km-alert span {
+  margin: 0 0.5rem;
+  cursor: pointer;
 }
-
-.alert-container {
+.km-alert {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.alert.msg {
-  margin: 0rem 0.5rem;
-}
-.alert {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: max-content;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   align-items: center;
-  border-radius: 5px;
-}
-.info.alert {
-  background-color: var(--info-bg);
-  border-left: 0.5rem solid var(--info);
-  color: var(--info-text);
+  justify-content: flex-start;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem 0;
 }
 
-.success.alert {
-  background-color: var(--success-bg);
-  border-left: 0.5rem solid var(--success);
-  color: var(--success-text);
+.km-error {
+  background: var(--red-300);
+  color: var(--red-500);
 }
-
-.danger.alert {
-  background-color: var(--danger-bg);
-  border-left: 0.5rem solid var(--danger);
-  color: var(--danger-text);
+.km-update {
+  background: var(--green-300);
+  color: var(--green-500);
 }
-
-.warning.alert {
-  background-color: var(--warning-bg);
-  border-left: 0.5rem solid var(--warning);
-  color: var(--warning-text);
+.km-report {
+  background: var(--orange-300);
+  color: var(--orange-500);
+}
+.km-info {
+  background: var(--violet-300);
+  color: var(--violet-700);
+}
+.km-error-bd {
+  border: 1px solid var(--red-500);
+  color: var(--red-500);
+}
+.km-update-bd {
+  border: 1px solid var(--green-500);
+  color: var(--green-500);
+}
+.km-report-bd {
+  border: 1px solid var(--orange-500);
+  color: var(--orange-500);
+}
+.km-info-bd {
+  border: 1px solid var(--violet-500);
+  color: var(--violet-700);
 }
