@@ -45,16 +45,16 @@
   border: 2px solid var(--gray-900);
 }
 .km.br.black {
-  border: 2px solid var(--black-700);
+  border: 2px solid var(--gray-900);
 }
 .km.br.white {
   border: 2px solid var(--gray-100);
 }
 .km.br.red {
-  border: 2px solid var(--black-700);
+  border: 2px solid var(--red-700);
 }
 .km.br.green {
-  border: 2px solid var(--black-700);
+  border: 2px solid var(--green-500);
 }
 
 .avatar-container {

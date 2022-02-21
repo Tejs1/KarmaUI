@@ -1,5 +1,3 @@
-/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
-
 :root {
   --black: #171321;
   --dkblue: #0d314b;
@@ -8,7 +6,7 @@
   --magenta: #e310cb;
   --aqua: #86fbfb;
   --white: #f7f8fa;
-  --font-size: 1.5rem;
+  --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
   --sans: Oxygen, sans-serif;
 }
@@ -51,6 +49,10 @@ a:hover {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 /* background color divs */
 
 .gradient {
@@ -71,7 +73,8 @@ a:hover {
   margin: 0 auto;
 }
 
-#intro p {
+#intro p,
+p {
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -83,14 +86,14 @@ a:hover {
 
 .name span {
   font-family: var(--sans);
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: var(--aqua);
   display: block;
   font-weight: 300;
 }
 
 #intro h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 /* navigation */
@@ -105,50 +108,108 @@ nav h1 a {
   font-family: var(--sans);
 }
 
-nav ul {
+nav ul,
+.sidebar ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-
+.sidebar ul {
+  flex-flow: column wrap;
+  justify-content: right;
+  align-items: flex-start;
+}
+.sidebar a {
+  font-family: var(--mono);
+}
 nav li:first-child {
   flex-basis: 100%;
   text-align: center;
 }
 
-nav a {
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+
+nav h1 [class*="fa-"] {
+  font-size: 100%;
+  color: var(--aqua);
+}
+
+nav a,
+.sidebar a {
   color: white;
   text-decoration: none;
   display: block;
 }
 
 nav a:hover,
-nav [class*="fa-"]:hover {
+nav [class*="fa-"]:hover,
+.sidebar a:hover {
   color: var(--magenta);
 }
-
+#github {
+  font-size: 2.5rem;
+}
 .button {
-  background-color: var(--aqua);
-  color: black;
+  background-color: var(--magenta);
+  color: white;
   padding: 0.5rem;
   border-radius: 5px;
-
+  text-decoration: none;
   font-family: var(--mono);
 }
 
 .button:hover {
   color: white;
-  background-color: var(--magenta);
+  background-color: var(--hotmag);
 }
 
-a:hover {
-  color: white;
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
+.sidebar {
+  padding-left: 3rem;
+  padding-right: 2rem;
+  border-right: solid 2px white;
+}
+
+.components {
+  min-width: 60vh;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.comp-code {
+  background-color: var(--dkblue);
+  color: var(--white);
+}
+/* footer section */
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
 @media (min-width: 850px) {
   nav {
     max-width: 1200px;
