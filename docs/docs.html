@@ -94,7 +94,7 @@
               <p>
                 The <code>Avatar</code> component is used to represent a user, and
                 displays the profile picture, we have avatar in different sizes
-                and shapes. You have to add <code>ct-avatar</code> class in
+                and shapes. You have to add <code>km-avatar</code> class in
                 <code> img </code>tag to use it as avatar. By default the avatar
                 size is 2.5rem.
               </p>
@@ -109,7 +109,7 @@
                   >sm | 32px, md | 40px, lg | 64px, xl | 80px ,xxl | 96px</code
                 >.
               </p>
-              <div class="comp-demo">
+              <div class="comp-demo list">
                 <img class="km avatar sm" src="../utils/svg/avatar.svg" />
                 <img class="km avatar" src="../utils/svg/avatar1.svg" />
                 <img class="km avatar lg" src="../utils/svg/avatar2.svg" />
@@ -132,7 +132,7 @@
               <p>
                 Use <code>rs , rm, rl , rf</code> class to add round border to avatar. 
               </p>
-              <div class="comp-demo">
+              <div class="comp-demo list">
                 <img class="km avatar rs" src="../../utils/svg/avatar6.svg" />
                 <img class="km avatar rm" src="../../utils/svg/avatar7.svg" />
                 <img class="km avatar rl" src="../../utils/svg/avatar8.svg" />
@@ -153,7 +153,7 @@
               <p>
                 You can use <code>br</code> class with colors to add border
               </p>
-              <div class="comp-demo">
+              <div class="comp-demo list">
                 <img class="km avatar br" src="../../utils/svg/avatar10.svg" />
                 <img class="km avatar br black" src="../../utils/svg/avatar11.svg" />
                 <img class="km avatar br white" src="../../utils/svg/avatar12.svg" />
@@ -317,7 +317,1261 @@
   
           
 
+            <div class="comp-type">
+              <h2 class="comp-title">Badge on Avatar</h2>
+              <p>
+                Badge on icons has <code>km badge</code> class, inside that we
+                have <code>bubble sm</code> class which is a badge. You can add these
+                classes to make it in different sizes,
+                <code>bubble sm, bubble m, bubble l</code>.
+              </p>
+              <div class="comp-demo list">
+                <div class="km badge">
+                  <img
+                    class="km avatar sm rs"
+                    src="https://www.svgrepo.com/show/26325/avatar.svg"
+                  />
+                  <span class="bubble sm">7</span>
+                </div>
+          
+                <div class="km badge">
+                  <img
+                    class="km avatar lg rs"
+                    src="https://www.svgrepo.com/show/26325/avatar.svg"
+                  />
+                  <span class="bubble m">10</span>
+                </div>
+          
+                <div class="km badge">
+                  <img
+                    class="km avatar xxl rs"
+                    src="https://www.svgrepo.com/show/26325/avatar.svg"
+                  />
+                  <span class="bubble l">100</span>
+                </div>
+              </div>
+              <div class="comp-code">
+                <pre> <code class="html">
+                  &lt;div class="km badge"&gt;
+                    &lt;img
+                      class="km avatar sm rs"
+                      src="https://www.svgrepo.com/show/26325/avatar.svg"
+                    /&gt;
+                    &lt;span class="bubble sm"&gt;7&lt;/span&gt;
+                  &lt;/div&gt;
+            
+                  &lt;div class="km badge"&gt;
+                    &lt;img
+                      class="km avatar lg rs"
+                      src="https://www.svgrepo.com/show/26325/avatar.svg"
+                    /&gt;
+                    &lt;span class="bubble m"&gt;10&lt;/span&gt;
+                  &lt;/div&gt;
+            
+                  &lt;div class="km badge"&gt;
+                    &lt;img
+                      class="km avatar xxl rs"
+                      src="https://www.svgrepo.com/show/26325/avatar.svg"
+                    /&gt;
+                    &lt;span class="bubble l"&gt;100&lt;/span&gt;
+                  &lt;/div&gt;</code> </pre>
+              </div>
+            </div>
   
+            <div class="comp-type">
+              <h2 class="comp-title">Badge on icons</h2>
+              <p>
+               Add badge on icons using <code>km badge i</code> class in component.
+              </p>
+              <div class="comp-demo list">
+                <div>
+                  <span class="km badge i">
+                    <i class="fas fa-bell fa-2x icon-weight"></i>
+                    <span class="bubble m icon">2</span>
+                  </span>
+                </div>
+                <div>
+                  <span class="km badge i">
+                    <i class="fas fa-bell fa-3x icon-weight"></i>
+                    <span class="bubble m icon">2</span>
+                  </span>
+                </div>
+              </div>
+              <div class="comp-code">
+                <pre>
+                 <code class="html">
+                  &lt;div>
+                    &lt;span class="km badge i">
+                      &lt;i class="fas fa-bell fa-2x icon-weight">&lt;/i>
+                      &lt;span class="bubble m icon">2&lt;/span>
+                    &lt;/span>
+                  &lt;/div>
+                  &lt;div>
+                    &lt;span class="km badge i">
+                      &lt;i class="fas fa-bell fa-3x icon-weight">&lt;/i>
+                      &lt;span class="bubble m icon">2&lt;/span>
+                    &lt;/span>
+                  &lt;/div>
+                 </code>
+               </pre>
+              </div>
+            </div>
+  
+           
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="button">Button</h2>
+              <p>
+                Buttons are most important component of a web page also term as
+                CTA(call to action). We have different types of button to give
+                user simple and clean experience.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Primary Button</h2>
+              <p>
+                Primary buttons are the main buttons or CTA of the page. use
+                <code>km-btn</code> class to use primary button. it also has four
+                colors which can you use adding respective classes.
+                <code>km-red, km-blue, km-green, km-gray</code>
+              </p>
+              <div class="comp-demo">
+                <button class="km-btn km-red">Primary</button>
+                <button class="km-btn km-blue">Primary</button>
+                <button class="km-btn km-green">Primary</button>
+                <button class="km-btn km-gray">Primary</button>
+              </div>
+              <div class="comp-code">
+                <pre> <code class="html">
+  &lt;button class="km-btn km-red">Primary&lt;/button>
+  &lt;button class="km-btn km-blue">Primary&lt;/button>
+  &lt;button class="km-btn km-green">Primary&lt;/button>
+  &lt;button class="km-btn km-gray">Primary&lt;/button>
+  </code> </pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Link Button</h2>
+              <p>
+                Link buttons are usefull to link other pages like social media
+                handles or wiki of some terms. Add
+                <code>km-red-bd, ... </code> classes to watch in action.
+              </p>
+              <div class="comp-demo">
+                <button class="km-btn km-red-bd">Link</button>
+                <button class="km-btn km-blue-bd">Link</button>
+                <button class="km-btn km-green-bd">Link</button>
+                <button class="km-btn km-gray-bd">Link</button>
+              </div>
+              <div class="comp-code">
+                <pre> <code class="html">
+  &lt;button class="km-btn km-red-bd">Link&lt;/button>
+  &lt;button class="km-btn km-blue-bd">Link&lt;/button>
+  &lt;button class="km-btn km-green-bd">Link&lt;/button>
+  &lt;button class="km-btn km-gray-bd">Link&lt;/button>
+  </code> </pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Icon Button</h2>
+              <p>
+                Buttons with icons also very usefull for the people who don't
+                understands a language or can't read. We have four types of icon
+                buttons shown below to use add respective classes.
+              </p>
+              <div class="comp-demo">
+                <button class="km-btn km-addcart">
+                  <span class="material-icons">shopping_cart</span>
+                  ADD TO CART
+                </button>
+                <button class="km-btn km-wishlist">
+                  <span class="material-icons">favorite</span>
+                  WISHLIST
+                </button>
+  
+                <button class="km-btn km-pay">
+                  <span class="material-icons">attach_money</span>
+                  PAYMENT
+                </button>
+                <button class="km-btn km-store">
+                  <span class="material-icons">store</span>
+                  STORE
+                </button>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;button class="km-btn km-addcart">
+    &lt;span class="material-icons">shopping_cart&lt;/span>
+    ADD TO CART
+  &lt;/button>
+  &lt;button class="km-btn km-wishlist">
+    &lt;span class="material-icons">favorite&lt;/span>
+    WISHLIST
+  &lt;/button> 
+  &lt;button class="km-btn km-pay">
+    &lt;span class="material-icons">attach_money&lt;/span>
+    PAYMENT
+  &lt;/button>
+  &lt;button class="km-btn km-store">
+    &lt;span class="material-icons">store&lt;/span>
+    STORE
+  &lt;/button>
+  </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title" id="badge">Floating Button</h2>
+              <p>
+                Floating buttons to show a list on button click or it can be use
+                for search bar.
+              </p>
+              <div class="comp-demo">
+                <button class="km-btn">
+                  <span class="material-icons km-float">search</span>
+                </button>
+                <button class="km-btn">
+                  <span class="material-icons km-float">add</span>
+                </button>
+                <button class="km-btn">
+                  <span class="material-icons km-float">save</span>
+                </button>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;button class="km-btn">
+    &lt;span class="material-icons km-float">search&lt;/span>&lt;/button>
+  &lt;button class="km-btn">&lt;span class="material-icons km-float">add&lt;/span>
+  &lt;/button>
+  &lt;button class="km-btn">
+    &lt;span class="material-icons km-float">save&lt;/span>
+  &lt;/button>
+   
+                </code></pre>
+              </div>
+            </div>
+          </section>
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="input">Input</h2>
+              <p>
+                Inputs are necessary for user interaction with the website. Inputs
+                are used to take information from the user, and then save the data
+                to the server.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Basic input</h2>
+              <p>
+                Basic input field with label. Include <code>km-input</code> class
+                to use.
+              </p>
+  
+              <div class="comp-demo">
+                <div class="km-input-div">
+                  <label for="km-input">Label*</label>
+                  <input
+                    type="text"
+                    id="km-input"
+                    class="km-input"
+                    placeholder="Basic input"
+                  />
+                </div>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;div class="km-input-div">
+  &lt;label for="km-input">Label*&lt;/label>
+  &lt;input type="text" id="km-input" class="km-input" placeholder="Basic input" />
+  &lt;/div>
+                </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Input with Icon</h2>
+              <p>
+                Input with icons, we have two types 1. input with error 2. input
+                with success
+              </p>
+  
+              <div class="comp-demo">
+                <div class="km-input-error">
+                  <input
+                    type="text"
+                    class="km-error-icon"
+                    name="input"
+                    placeholder="input text"
+                  />
+                  <span class="material-icons">warning_amber</span>
+                </div>
+  
+                <div class="km-input-check">
+                  <input
+                    type="text"
+                    class="km-check-icon"
+                    name="input"
+                    placeholder="input text"
+                  />
+                  <span class="material-icons">done</span>
+                </div>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;div class="km-input-error">
+  &lt;input type="text" class="km-error-icon" name="input" placeholder="input text"/>
+    &lt;span class="material-icons">warning_amber&lt;/span>
+  &lt;/div>
+  &lt;div class="km-input-check"> 
+  &lt;input type="text" class="km-check-icon" name="input" placeholder="input text"/>
+    &lt;span class="material-icons">done&lt;/span>
+  &lt;/div>
+                </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title" id="input">Input types</h2>
+              <p>
+                Checkbox and radio buttons are use to make a choice. to agree a
+                policy, and choose the gender.
+              </p>
+  
+              <div class="comp-demo">
+                <div class="km-wrapper">
+                  <input
+                    type="checkbox"
+                    checked
+                    id="checkbox1"
+                    class="km-checkbox"
+                  />
+                  <label for="checkbox1">Checked</label>
+                </div>
+                <div class="km-wrapper">
+                  <input
+                    type="checkbox"
+                    id="checkbox2"
+                    class="km-checkbox"
+                    disabled
+                  />
+                  <label for="checkbox2">Checkbox</label>
+                </div>
+                <div class="km-wrapper">
+                  <input type="radio" name="radio" id="radio1" class="km-radio" />
+                  <label for="radio1">Male</label>
+                </div>
+                <div class="km-wrapper">
+                  <input type="radio" class="km-radio" name="radio" id="radio2" />
+                  <label for="radio2">Female</label>
+                </div>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;div class="km-wrapper">
+  &lt;input type="checkbox" checked id="checkbox1" class="km-checkbox"/>
+  &lt;label for="checkbox1">Checked&lt;/label> &lt;/div>
+  &lt;div class="km-wrapper">
+  &lt;input type="checkbox" id="checkbox2" class="km-checkbox" disabled/>
+    &lt;label for="checkbox2">Checkbox&lt;/label> &lt;/div>
+  &lt;div class="km-wrapper">
+    &lt;input type="radio" name="radio" id="radio1" class="km-radio" />
+    &lt;label for="radio1">Male&lt;/label> &lt;/div>
+  &lt;div class="km-wrapper">
+    &lt;input type="radio" class="km-radio" name="radio" id="radio2" />
+    &lt;label for="radio2">Female&lt;/label> &lt;/div>
+               </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title" id="input">Input form</h2>
+              <p>
+                Every site has a form to get data of user it can be usefull in
+                different ways. You can directly use below form dy copy and
+                pasting into your page.
+              </p>
+  
+              <div class="comp-demo">
+                <form class="km-form">
+                  <h2>Sign up</h2>
+                  <div class="km-input-div">
+                    <input
+                      type="text"
+                      name="km-input"
+                      class="km-input"
+                      placeholder="Enter name..."
+                      required
+                    />
+                  </div>
+                  <div class="km-input-error">
+                    <input
+                      type="email"
+                      class="km-error-icon"
+                      name="input"
+                      placeholder="Email..."
+                      required
+                    />
+                    <span class="material-icons">warning_amber</span>
+                  </div>
+                  <div class="km-input-check">
+                    <input
+                      type="tel"
+                      class="km-check-icon"
+                      name="input"
+                      placeholder="Phone No..."
+                      required
+                    />
+                    <span class="material-icons">done</span>
+                  </div>
+                  <div class="km-checkbox-div">
+                    <input
+                      type="checkbox"
+                      id="checkbox3"
+                      required
+                      class="km-checkbox"
+                    />
+                    <label for="checkbox3">Privacy</label>
+                  </div>
+                  <div class="km-radio-div">
+                    <input
+                      type="radio"
+                      name="radio"
+                      id="radio3"
+                      required
+                      class="km-radio"
+                    />
+                    <label for="radio3">Male</label>
+                  </div>
+                  <div class="km-radio-div">
+                    <input
+                      type="radio"
+                      name="radio"
+                      id="radio4"
+                      required
+                      class="km-radio"
+                    />
+                    <label for="radio4">Female</label>
+                  </div>
+                  <button class="km-form-btn" type="submit">SUBMIT</button>
+                </form>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;form class="km-form"> Sign up &lt;div class="km-input-div">
+    &lt;input type="text" class="km-input" placeholder="Enter name..." required /> &lt;/div>
+    &lt;div class="km-input-error">
+    &lt;input type="email" class="km-error-icon" placeholder="Email..." required />
+    &lt;span class="material-icons">warning_amber&lt;/span> &lt;/div>
+    &lt;div class="km-input-check">
+    &lt;input type="tel" class="km-check-icon" placeholder="Phone No..." required />
+    &lt;span class="material-icons">done&lt;/span> &lt;/div>
+    &lt;div class="km-checkbox-div">
+    &lt;input type="checkbox" id="checkbox3" required class="km-checkbox" />
+    &lt;label for="checkbox3">Privacy&lt;/label> &lt;/div>
+    &lt;div class="km-radio-div">
+    &lt;input type="radio" id="radio3" required class="km-radio" />
+    &lt;label for="radio3">Male&lt;/label> &lt;/div>
+    &lt;div class="km-radio-div"> &lt;input type="radio" id="radio4" class="km-radio" required /> 
+    &lt;label for="radio4">Female&lt;/label> &lt;/div>
+    &lt;button class="km-form-btn" type="submit">SUBMIT&lt;/button> 
+  &lt;/form>        
+                </code></pre>
+              </div>
+            </div>
+          </section>
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="image">Image</h2>
+              <p>
+                Image Components are used to dsiplay Images on websites, which are
+                screen responsive. They expand upto the width of the container
+                they are in.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Image in size</h2>
+              <p>
+                This are default square images with three sizes.
+                <code
+                  >km-img-sm | small, km-img-md | medium, km-img-lg | large.</code
+                >
+              </p>
+              <small> small = 96px, medium = 128px, and large = 192px. </small>
+  
+              <div class="comp-demo">
+                <img
+                  src="https://media.robertsspaceindustries.com/v3siy1nhzsvd7/store_slideshow_large.jpg"
+                  alt="ship"
+                  class="km-img-sm"
+                />
+                <img
+                  src="https://media.robertsspaceindustries.com/v3siy1nhzsvd7/store_slideshow_large.jpg"
+                  alt="ship"
+                  class="km-img-md"
+                />
+                <img
+                  src="https://media.robertsspaceindustries.com/v3siy1nhzsvd7/store_slideshow_large.jpg"
+                  alt="ship"
+                  class="km-img-lg"
+                />
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;img src="img-url" lass="km-img-sm" alt="ship"/>
+  &lt;img src="img-url" class="km-img-md" alt="ship"/>
+  &lt;img src="img-url" class="km-img-lg" alt="ship"/>
+                </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Round image</h2>
+              <p>Round images are used as profile or logo also.</p>
+  
+              <div class="comp-demo">
+                <img
+                  src="https://media.robertsspaceindustries.com/v3siy1nhzsvd7/store_slideshow_large.jpg"
+                  alt="ship"
+                  class="km-img-round km-img-sm"
+                />
+                <img
+                  src="https://media.robertsspaceindustries.com/v3siy1nhzsvd7/store_slideshow_large.jpg"
+                  alt="ship"
+                  class="km-img-round km-img-md"
+                />
+                <img
+                  src="https://media.robertsspaceindustries.com/v3siy1nhzsvd7/store_slideshow_large.jpg"
+                  alt="ship"
+                  class="km-img-round km-img-lg"
+                />
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;img src="image-url" alt="ship" class="km-img-round km-img-sm" />
+  &lt;img src="image-url" alt="ship" class="km-img-round km-img-md" />
+  &lt;img src="image-url" alt="ship" class="km-img-round km-img-lg" />
+                </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Responsive image</h2>
+              <p>
+                Responsive images are much important because it can response to
+                the viewport, and we don't need to add styles for different
+                viewports. we have below example of responsive image which adjust
+                its <code>width</code> and <code> height</code> respekm to its
+                parent element.
+              </p>
+  
+              <div class="comp-demo">
+                <div class="km-landing-div">
+                  <img
+                    src="https://media.robertsspaceindustries.com/v3siy1nhzsvd7/store_slideshow_large.jpg"
+                    alt="ship"
+                    class="km-img"
+                  />
+                </div>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;div class="km-landing-div">
+    &lt;img src="your-img-url" alt="ship" class="km-img" />
+  &lt;/div>
+                </code></pre>
+              </div>
+            </div>
+          </section>
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="card">Card</h2>
+              <p>
+                Cards are boxes that display content and actions. They should be
+                easy to scan for relevant and actionable information. Elements,
+                like text and images, should be placed on them in a way that
+                clearly indicates hierarchy.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">
+                Cards with buttons, badges, Dismiss and Text overlay
+              </h2>
+              <p>
+                Cards are the important component in e-commerce site. We can show
+                our product, its stats and price in single card.
+              </p>
+  
+              <div class="comp-demo card">
+                <section >
+                  <h2>Card with badge and buttons</h2>
+                  <a class="km-basic-card km-card-badge-div">
+                    <span class="km-btn km-blue km-card-badge">NEW</span>
+                    <span class="material-icons km-card-wish">favorite</span>
+                    <img
+                      src="https://media.robertsspaceindustries.com/c2k21tjgn3z6a/store_small.jpg"
+                      alt="fist"
+                      class="km-card-img"
+                    />
+                    <div class="km-product-stats">
+                      <h3>Constellation Aquila</h3>
+                      <small>Manufacturer : TSI</small>
+                      <p class="km-product-info">
+                        Explore any distant horizons! The Constellation Aquila features a
+                        redesigned cockpit for maximum visibility, advanced sensors and an
+                        onboard Ursa rover for planetary exploration. Let’s see what’s out
+                        there!
+                      </p>
+                      <div class="km-card-btns">
+                        <button class="km-btn km-ebtn km-addcart">
+                          <span class="material-icons">shopping_cart</span>
+                          ADD TO CART
+                        </button>
+                        <button class="km-btn km-ebtn km-pay">
+                          <span class="material-icons">attach_money</span>
+                          BUY
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </section>
+                <section >
+                  <h2>Card on Text overlay</h2>
+                  <a class="km-basic-card">
+                    <img
+                      src="https://media.robertsspaceindustries.com/c2k21tjgn3z6a/store_small.jpg"
+                      alt="ship"
+                      class="km-card-img"
+                    />
+                    <div class="km-product-stats">
+                      <div class="product-title">
+                        <h3>Constellation Aquila</h3>
+                        <small>Manufacturer : TSI</small>
+                      </div>
+                      <p class="km-product-info">
+                        Explore any distant horizons! The Constellation Aquila features a
+                        redesigned cockpit for maximum visibility, advanced sensors and an
+                        onboard Ursa rover for planetary exploration. Let’s see what’s out
+                        there!
+                      </p>
+                      <div class="km-card-btns">
+                        <button class="km-btn km-gray-bd">ADD TO CART</button>
+                        <button class="km-btn km-blue">BUY NOW</button>
+                      </div>
+                    </div>
+                  </a>
+                </section>
+                <section >
+                  <h2>Card with Dismiss</h2>
+                  <a class="km-basic-card km-card-badge-div">
+                    <span class="material-icons km-card-dismiss">close</span>
+                    <img
+                      src="https://media.robertsspaceindustries.com/c2k21tjgn3z6a/store_small.jpg"
+                      alt="fist"
+                      class="km-card-img"
+                    />
+                    <div class="km-product-stats">
+                      <h3>Constellation Aquila</h3>
+                      <small>Manufacturer : TSI</small>
+                      <p class="km-product-info">
+                        Explore any distant horizons! The Constellation Aquila features a
+                        redesigned cockpit for maximum visibility, advanced sensors and an
+                        onboard Ursa rover for planetary exploration. Let’s see what’s out
+                        there!
+                      </p>
+                      <div class="km-card-btns">
+                        <button class="km-btn km-gray-bd">ADD TO CART</button>
+                        <button class="km-btn km-blue">BUY NOW</button>
+                      </div>
+                    </div>
+                  </a>
+                </section>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+                  
+            Card with badge and buttons
+            &lt;a class="km-basic-card km-card-badge-div">
+              &lt;span class="km-btn km-blue km-card-badge">NEW&lt;/span>
+              &lt;span class="material-icons km-card-wish">favorite&lt;/span>
+              &lt;img src="image-url"
+                alt="fist"
+                class="km-card-img"
+              />
+              &lt;div class="km-product-stats">
+                &lt;h3>Constellation Aquila&lt;/h3>
+                &lt;small>Manufacturer : TSI&lt;/small>
+                &lt;p class="km-product-info">
+                  Explore any distant horizons! The Constellation Aquila features a
+                  redesigned cockpit for maximum visibility, advanced sensors and an
+                  onboard Ursa rover for planetary exploration. Let’s see what’s out
+                  there!
+                &lt;/p>
+                &lt;div class="km-card-btns">
+                  &lt;button class="km-btn km-ebtn km-addcart">
+                    &lt;span class="material-icons">shopping_cart&lt;/span>
+                    ADD TO CART
+                  &lt;/button>
+                  &lt;button class="km-btn km-ebtn km-pay">
+                    &lt;span class="material-icons">attach_money&lt;/span>
+                    BUY
+                  &lt;/button>
+                &lt;/div>
+              &lt;/div>
+            &lt;/a>
+          
+          
+            Card on Text overlay
+            &lt;a class="km-basic-card">
+              &lt;img src="image-url"
+                alt="ship"
+                class="km-card-img"
+              />
+              &lt;div class="km-product-stats">
+                &lt;div class="product-title">
+                  &lt;h3>Constellation Aquila&lt;/h3>
+                  &lt;small>Manufacturer : TSI&lt;/small>
+                &lt;/div>
+                &lt;p class="km-product-info">
+                  Explore any distant horizons! The Constellation Aquila features a
+                  redesigned cockpit for maximum visibility, advanced sensors and an
+                  onboard Ursa rover for planetary exploration. Let’s see what’s out
+                  there!
+                &lt;/p>
+                &lt;div class="km-card-btns">
+                  &lt;button class="km-btn km-gray-bd">ADD TO CART&lt;/button>
+                  &lt;button class="km-btn km-blue">BUY NOW&lt;/button>
+                &lt;/div>
+              &lt;/div>
+            &lt;/a>
+          
+          
+            Card with Dismiss
+            &lt;a class="km-basic-card km-card-badge-div">
+              &lt;span class="material-icons km-card-dismiss">close&lt;/span>
+              &lt;img src="image-url"
+                alt="fist"
+                class="km-card-img"
+              />
+              &lt;div class="km-product-stats">
+                &lt;h3>Constellation Aquila&lt;/h3>
+                &lt;small>Manufacturer : TSI&lt;/small>
+                &lt;p class="km-product-info">
+                  Explore any distant horizons! The Constellation Aquila features a
+                  redesigned cockpit for maximum visibility, advanced sensors and an
+                  onboard Ursa rover for planetary exploration. Let’s see what’s out
+                  there!
+                &lt;/p>
+                &lt;div class="km-card-btns">
+                  &lt;button class="km-btn km-gray-bd">ADD TO CART&lt;/button>
+                  &lt;button class="km-btn km-blue">BUY NOW&lt;/button>
+                &lt;/div>
+              &lt;/div>
+            &lt;/a>
+                  
+  </code></pre>
+              </div>
+            </div>
+            <div class="comp-type">
+              <h2 class="comp-title">Text only cards and Cards with shadow</h2>
+  
+              <div class="comp-demo">
+                <section style="padding: 2rem">
+                  <h2>Text Only Card</h2>
+                  <a class="km-basic-card text-card">
+                    <span class="material-icons km-card-close">close</span>
+                    <div class="text-container">
+                      <h2>Thank you for visiting!</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                        quod mollitia explicabo quo iusto
+                      </p>
+                    </div>
+                    <div class="text-card-btn">
+                      <span class="material-icons wishlist-btn">favorite</span>
+                      <span class="material-icons share-btn">share</span>
+                    </div>
+                  </a>
+                </section>
+                <section style="padding: 2rem">
+                  <h2>Cards with shadow</h2>
+                  <a class="km-basic-card km-shadow">
+                    <img
+                      src="https://media.robertsspaceindustries.com/c2k21tjgn3z6a/store_small.jpg"
+                      alt="ship"
+                      class="km-card-img"
+                    />
+                    <div class="km-product-stats">
+                      <h3>Constellation Aquila</h3>
+                      <small>Manufacturer : TSI</small>
+                      <p class="km-product-info">
+                        Explore any distant horizons! The Constellation Aquila features a
+                        redesigned cockpit for maximum visibility, advanced sensors and an
+                        onboard Ursa rover for planetary exploration. Let’s see what’s out
+                        there!
+                      </p>
+                      <div class="km-card-btns">
+                        <button class="km-btn km-gray-bd">ADD TO CART</button>
+                        <button class="km-btn km-blue">BUY NOW</button>
+                      </div>
+                    </div>
+                  </a>
+                </section>
+
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+               
+                    Text Only Card
+                    &lt;a class="km-basic-card text-card">
+                      &lt;span class="material-icons km-card-close">close&lt;/span>
+                      &lt;div class="text-container">
+                        &lt;h2>Thank you for visiting!&lt;/h2>
+                        &lt;p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                          quod mollitia explicabo quo iusto
+                        &lt;/p>
+                      &lt;/div>
+                      &lt;div class="text-card-btn">
+                        &lt;span class="material-icons wishlist-btn">favorite&lt;/span>
+                        &lt;span class="material-icons share-btn">share&lt;/span>
+                      &lt;/div>
+                    &lt;/a>
+                
+            
+                    Cards with shadow
+                    &lt;a class="km-basic-card km-shadow">
+                      &lt;img
+                        src="https://media.robertsspaceindustries.com/c2k21tjgn3z6a/store_small.jpg"
+                        alt="ship"
+                        class="km-card-img"
+                      />
+                      &lt;div class="km-product-stats">
+                        &lt;h3>Constellation Aquila&lt;/h3>
+                        &lt;small>Manufacturer : TSI&lt;/small>
+                        &lt;p class="km-product-info">
+                          Explore any distant horizons! The Constellation Aquila features a
+                          redesigned cockpit for maximum visibility, advanced sensors and an
+                          onboard Ursa rover for planetary exploration. Let’s see what’s out
+                          there!
+                        &lt;/p>
+                        &lt;div class="km-card-btns">
+                          &lt;button class="km-btn km-gray-bd">ADD TO CART&lt;/button>
+                          &lt;button class="km-btn km-blue">BUY NOW&lt;/button>
+                        &lt;/div>
+                      &lt;/div>
+                    &lt;/a>
+              
+              </code></pre>
+              </div>
+            </div>
+
+
+            <div class="comp-type">
+              <h2 class="comp-title">Horizontal card</h2>
+  
+              <div class="comp-demo">
+                
+                  <a class="km-horizontal-card km-card-badge-div">
+                    <span class="material-icons km-card-close">close</span>
+                    <div class="flex-row">
+                      <div>
+                        <img
+                          src="https://media.robertsspaceindustries.com/c2k21tjgn3z6a/store_small.jpg"
+                          class="km-card-img km-img-lg"
+                          alt="product"
+                        />
+                      </div>
+          
+                      <div class="km-product-stats">
+                        <h3>Constellation Aquila</h3>
+                        <small>Manufacturer : TSI</small>
+                        <p class="km-product-info">
+                          Explore any distant horizons! The Constellation Aquila features
+                          a redesigned cockpit for maximum visibility, advanced sensors
+                          and an onboard Ursa rover for planetary exploration. Let’s see
+                          what’s out there!
+                        </p>
+                        <div class="km-card-btns">
+                          <button class="km-btn km-gray-bd">THANKS</button>
+                          <button class="km-btn">
+                            <span class="material-icons wishlist-btn">favorite</span>
+                            <span class="material-icons share-btn">share</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+              &lt;a class="km-horizontal-card km-card-badge-div">
+                &lt;span class="material-icons km-card-close">close&lt;/span>
+                &lt;div class="flex-row">
+                  &lt;div>
+                    &lt;img
+                      src="https://media.robertsspaceindustries.com/c2k21tjgn3z6a/store_small.jpg"
+                      class="km-card-img km-img-lg"
+                      alt="product"
+                    />
+                  &lt;/div>
+      
+                  &lt;div class="km-product-stats">
+                    &lt;h3>Constellation Aquila&lt;/h3>
+                    &lt;small>Manufacturer : TSI&lt;/small>
+                    &lt;p class="km-product-info">
+                      Explore any distant horizons! The Constellation Aquila features
+                      a redesigned cockpit for maximum visibility, advanced sensors
+                      and an onboard Ursa rover for planetary exploration. Let’s see
+                      what’s out there!
+                    &lt;/p>
+                    &lt;div class="km-card-btns">
+                      &lt;button class="km-btn km-gray-bd">THANKS&lt;/button>
+                      &lt;button class="km-btn">
+                        &lt;span class="material-icons wishlist-btn">favorite&lt;/span>
+                        &lt;span class="material-icons share-btn">share&lt;/span>
+                      &lt;/button>
+                    &lt;/div>
+                  &lt;/div>
+                &lt;/div>
+              &lt;/a>
+              </code></pre>
+              </div>
+            </div>
+          </section>
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="text-utils">Text Utilities</h2>
+              <p>
+                Text component is the used to render text and paragraphs within an
+                interface. It renders all paragraph, Headings tag by default.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Text Headings</h2>
+              <p>
+                Text Utilities for Headings only, we have six heading types with
+                different font sizes. just add a classes to use
+                <code>km-h6, km-h5, km-h4, km-h3, km-h2, km-h1</code>.
+              </p>
+              <div class="comp-demo">
+                <div class="km-text-headings">
+                  <h6 class="km-h6">h6. "this" this is a javascript joke</h6>
+                  <h5 class="km-h5">h5. "this" this is a javascript joke</h5>
+                  <h4 class="km-h4">h4. "this" this is a javascript joke</h4>
+                  <h3 class="km-h3">h3. "this" this is a javascript joke</h3>
+                  <h2 class="km-h2">h2. "this" this is a javascript joke</h2>
+                  <h1 class="km-h1">h1. "this" this is a javascript joke</h1>
+                </div>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;div class="km-text-headings">
+    &lt;h6 class="km-h6">h6. "this" this is a javascript joke&lt;/h6>
+    &lt;h5 class="km-h5">h5. "this" this is a javascript joke&lt;/h5>
+    &lt;h4 class="km-h4">h4. "this" this is a javascript joke&lt;/h4>
+    &lt;h3 class="km-h3">h3. "this" this is a javascript joke&lt;/h3>
+    &lt;h2 class="km-h2">h2. "this" this is a javascript joke
+    &lt;h1 class="km-h1">h1. "this" this is a javascript joke&lt;/h1>
+  &lt;/div>
+  </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Text alignments</h2>
+              <p>
+                Three types of text alignments, use
+                <code>km-text-start</code> class for align text at start,
+                <code>km-text-center</code> for center,
+                <code>km-text-end</code> for end.
+              </p>
+  
+              <div class="comp-demo">
+                <div class="km-text-div">
+                  <p class="km-text-start">"this" this is a javascript joke</p>
+  
+                  <p class="km-text-center">"this" this is a javascript joke</p>
+  
+                  <p class="km-text-end">"this" this is a javascript joke</p>
+                </div>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;p class="km-text-start">"this" this is a javascript joke&lt;/p>
+  &lt;p class="km-text-center">"this" this is a javascript joke&lt;/p>
+  &lt;p class="km-text-end">"this" this is a javascript joke&lt;/p>
+  </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Gray Text</h2>
+              <p>
+                Gray text for better reading experience. add
+                <code>km-text-gray</code> class.
+              </p>
+  
+              <div class="comp-demo">
+                <div class="km-text-div">
+                  <p class="km-text-gray">"this" this is a javascript joke.</p>
+                </div>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;p class="km-text-gray">"this" this is a javascript joke.&lt;/p>
+  </code></pre>
+              </div>
+            </div>
+          </section>
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="lists">Lists</h2>
+              <p>
+                List component is used to display list items. It renders a
+                unorder-lists by default. But we also have some ordered as well as
+                icons with list also.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title" id="lists">Simple lists</h2>
+              <p>
+                Simple list components ordered and unorder. use respekmive
+                classes.
+              </p>
+              <div class="comp-demo list">
+                <ul class="km-ul-list">
+                  <li>Item</li>
+                  <li>Item</li>
+                  <li>Item</li>
+                  <li>Item</li>
+                </ul>
+                <ol class="km-ol-list">
+                  <li>Item</li>
+                  <li>Item</li>
+                  <li>Item</li>
+                  <li>Item</li>
+                </ol>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;ul class="km-ul-list">       
+   &lt;li>Item&lt;/li>            
+   &lt;li>Item&lt;/li>             
+   &lt;li>Item&lt;/li>             
+   &lt;li>Item&lt;/li>             
+  &lt;/ul>
+  &lt;ol class="km-ol-list">
+   &lt;li>Item&lt;/li>
+   &lt;li>Item&lt;/li>
+   &lt;li>Item&lt;/li>
+   &lt;li>Item&lt;/li>
+  &lt;/ol>
+  </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title" id="lists">Icon lists</h2>
+              <p>
+                List with icons good to use for better UX to user. add respekmive
+                classes to ul element.
+              </p>
+              <div class="comp-demo">
+                <ul class="km-icon-list">
+                  <li><span class="material-icons">check_circle</span>Item</li>
+                  <li><span class="material-icons">check_circle</span>Item</li>
+                  <li><span class="material-icons">check_circle</span>Item</li>
+                  <li><span class="material-icons">info</span>Item</li>
+                </ul>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;ul class="km-icon-list">
+    &lt;li>&lt;span class="material-icons">check_circle&lt;/span>Item&lt;/li>
+    &lt;li>&lt;span class="material-icons">check_circle&lt;/span>Item&lt;/li>
+    &lt;li>&lt;span class="material-icons">check_circle&lt;/span>Item&lt;/li>
+    &lt;li>&lt;span class="material-icons">info&lt;/span>Item&lt;/li>
+  &lt;/ul>
+  </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title" id="lists">Stacked lists</h2>
+              <p>
+                Stacked lists are also usefull to display list of users with name,
+                avatar, and status. In that case use our stacked list.
+              </p>
+              <div class="comp-demo">
+                <ul class="km-stacked-list">
+                  <li>
+                    <img class="km avatar sm"
+                      src="../utils/svg/avatar.svg"
+                      class="km-round km-md"
+                      alt=""
+                    />
+                    <div class="km-list-item">
+                      <h4>User name</h4>
+                      <small>Online</small>
+                    </div>
+                  </li>
+                  <li>
+                    <img class="km avatar sm"
+                      src="../utils/svg/avatar.svg"
+                      class="km-round km-md"
+                      alt=""
+                    />
+                    <div class="km-list-item">
+                      <h4>User name</h4>
+                      <small>Offline</small>
+                    </div>
+                  </li>
+                  <li>
+                    <img class="km avatar sm"
+                      src="../utils/svg/avatar.svg"
+                      class="km-round km-md"
+                      alt=""
+                    />
+                    <div class="km-list-item">
+                      <h4>User name</h4>
+                      <small>Online</small>
+                    </div>
+                  </li>
+                  <li>
+                    <img class="km avatar sm"
+                      src="../utils/svg/avatar.svg"
+                      class="km-round km-md"
+                      alt=""
+                    />
+                    <div class="km-list-item">
+                      <h4>User name</h4>
+                      <small>Online</small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;ul class="km-stacked-list">
+  &lt;li>
+    &lt;img class="km avatar sm" src="img-url" class="km-round km-md" alt="avatar"/>
+    &lt;div class="km-list-item">&lt;h4>User name&lt;/h4>&lt;small>Online&lt;/small>&lt;/div>
+  &lt;/li>
+  &lt;li>
+    &lt;img class="km avatar sm" src="img-url" class="km-round km-md" alt="avatar"/>
+    &lt;div class="km-list-item">&lt;h4>User name&lt;/h4>&lt;small>Offline&lt;/small>&lt;/div>
+  &lt;/li>
+  &lt;li>
+    &lt;img class="km avatar sm" src="img-url" class="km-round km-md" alt="avatar"/>
+    &lt;div class="km-list-item">&lt;h4>User name&lt;/h4>&lt;small>Offline&lt;/small>&lt;/div>
+    &lt;/li>
+  &lt;li>
+    &lt;img class="km avatar sm" src="img-url" class="km-round km-md" alt="avatar"/>
+    &lt;div class="km-list-item">&lt;h4>User name&lt;/h4>&lt;small>Offline&lt;/small>&lt;/div>
+  &lt;/li>
+  &lt;/ul>
+  </code></pre>
+              </div>
+            </div>
+          </section>
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="nav">Navbar</h2>
+              <p>
+                Navigation bar is first and most important component of any
+                website. Without navbar user will not know which brand is it,
+                where to look more and to connekm with brand.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title" id="lists">Navbar</h2>
+              <p>
+                We are providing the navbar for e-commerce site you can make
+                changes on your own, for your personal use cases. Make sure to
+                copy and check all the classes are same.
+              </p>
+              <div class="comp-demo">
+                <nav class="km-nav-bar">
+                  <div class="km-nav-logo"><h1>Navbar</h1></div>
+                  <div class="km-right-nav">
+                    <div class="km-nav-searchbar">
+                      <input type="search" placeholder="Search..." class="km-input" />
+                      <button class="km-btn km-gray">Search</button>
+                    </div>
+                    <div class="km-nav-user">
+                      <div class="km-nav-icons">
+                        <span class="km badge i">
+                          <span class="material-icons">shopping_cart</span>
+                          <span class="bubble icon">2</span>
+                        </span>
+                      </div>
+                      <div class="km-nav-icons">
+                        <div class="km badge i">
+                          <span class="material-icons">person</span>
+                        </div>
+                        Sign in
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+  
+              <div class="comp-code">
+                <pre><code class="html">
+          &lt;nav class="km-nav-bar">
+            &lt;div class="km-nav-logo">&lt;h1>Navbar&lt;/h1>&lt;/div>
+            &lt;div class="km-right-nav">
+              &lt;div class="km-nav-searchbar">
+                &lt;input type="search" placeholder="Search..." class="km-input" />
+                &lt;button class="km-btn km-gray">Search&lt;/button>
+              &lt;/div>
+              &lt;div class="km-nav-user">
+                &lt;div class="km-nav-icons">
+                  &lt;span class="km badge i">
+                    &lt;span class="material-icons">shopping_cart&lt;/span>
+                    &lt;span class="bubble icon">2&lt;/span>
+                  &lt;/span>
+                &lt;/div>
+                &lt;div class="km-nav-icons">
+                  &lt;div class="km badge i">
+                    &lt;span class="material-icons">person&lt;/span>
+                  &lt;/div>
+                  Sign in
+                &lt;/div>
+              &lt;/div>
+            &lt;/div>
+          &lt;/nav>
+  </code></pre>
+              </div>
+            </div>
+          </section>
        
     </main>
     <footer></footer>
