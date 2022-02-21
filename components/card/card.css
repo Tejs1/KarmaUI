@@ -20,15 +20,15 @@
   max-height: 100%;
   text-decoration: none;
   background: var(--blue-100);
-  color: var(--text);
+  color: var(--gray-900);
   transition: all 250ms ease;
 }
 .km-shadow {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 5px rgb(0, 0, 0);
 }
 
 .km-shadow:hover {
-  box-shadow: 0 10px 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 1rem rgb(0, 0, 0);
 }
 .km-card-badge-div {
   position: relative;
@@ -96,12 +96,12 @@
   width: max-content;
   text-decoration: none;
   background: var(--blue-100);
-  color: var(--text);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  color: var(--gray-900);
+  box-shadow: 0 5px 5px rgb(0, 0, 0);
   transition: all 250ms ease;
 }
 .km-horizontal-card:hover {
-  box-shadow: 0 10px 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 1rem rgb(0, 0, 0);
 }
 .km-card-close {
   position: absolute;
