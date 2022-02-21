@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../min.css" />
+
+    <title>Karma UI</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <h1>
+            <a href="../index.html">
+              <span class="fas fa-code" aria-hidden="true"></span>
+              Karma UI
+            </a>
+          </h1>
+        </li>
+        <li><a href="">Installation</a></li>
+
+        <li>
+          <a href="" class="button">Documentation</a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/Tejs1/KarmaUI/tree/dev/components"
+            target="_blank"
+          >
+            <span
+              class="fab fa-github-square"
+              id="github"
+              aria-hidden="true"
+            ></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="sidebar">
+        <ul class="comp-list">
+          <li><a class="link" href="#installation">Installation</a></li>
+          <li><a class="link" href="#avatar">Avatar</a></li>
+          <li><a class="link" href="#alert">Alert</a></li>
+          <li><a class="link" href="#badge">Badge</a></li>
+          <li><a class="link" href="#button">Button</a></li>
+          <li><a class="link" href="#input">Input</a></li>
+          <li><a class="link" href="#image">Image</a></li>
+          <li><a class="link" href="#card">Card</a></li>
+          <li><a class="link" href="#text-utils">Text Utilities</a></li>
+          <li><a class="link" href="#lists">Lists</a></li>
+          <li><a class="link" href="#nav">Navbar</a></li>
+        
+        </ul>
+      </div>
+      <div class="components">
+        
+<!-- ALL THE COMPONENTS OF THE LIBRARY ARE BELOW  -->
+          <section class="comp-container">
+            <div class="comp-type">
+                <h2 class="comp-title" >Introduction</h2>
+                    <p>
+                      <code>KarmaUi</code> is a free, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces.
+                    </p>
+              </div>
+              <div class="comp-type">
+                <h2 class="comp-title">Installation Guide</h2>
+                <p>
+                  To use KarmaUi in your web interfaces , copy the following link and paste it in <head> tag of your main HTML file.
+                </p>
+    
+                <div class="comp-code">
+                  <pre><code class="html">
+    &lt;link rel="stylesheet" href="https://karmaui.netlify.app/min.css" />
+                  </code></pre>
+                </div>
+              </div>
+            <div class="comp-type">
+              <h2 class="comp-title" id="avatar">Avatar</h2>
+              <p>
+                The <code>Avatar</code> component is used to represent a user, and
+                displays the profile picture, we have avatar in different sizes
+                and shapes. You have to add <code>ct-avatar</code> class in
+                <code> img </code>tag to use it as avatar. By default the avatar
+                size is 2.5rem.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Round Avatar Sizes</h2>
+              <p>
+                You have to apply <code>km avatar</code> class to use
+                 avatar, which has four different sizes
+                <code
+                  >sm | 32px, md | 40px, lg | 64px, xl | 80px ,xxl | 96px</code
+                >.
+              </p>
+              <div class="comp-demo">
+                <img class="km avatar sm" src="../utils/svg/avatar.svg" />
+                <img class="km avatar" src="../utils/svg/avatar1.svg" />
+                <img class="km avatar lg" src="../utils/svg/avatar2.svg" />
+                <img class="km avatar xl" src="../utils/svg/avatar3.svg" />
+                <img class="km avatar xxl" src="../utils/svg/avatar4.svg" />
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+    &lt;img class="km avatar sm" src="image-url"/&gt;
+    &lt;img class="km avatar" src="image-url" /&gt;
+    &lt;img class="km avatar lg" src="image-url" /&gt;
+    &lt;img class="km avatar xl" src="image-url" /&gt;
+    &lt;img class="km avatar xxl" src="image-url" /&gt;
+                </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Squared Avatar</h2>
+              <p>
+                Use <code>rs , rm, rl , rf</code> class to add round border to avatar. 
+              </p>
+              <div class="comp-demo">
+                <img class="km avatar rs" src="../../utils/svg/avatar6.svg" />
+                <img class="km avatar rm" src="../../utils/svg/avatar7.svg" />
+                <img class="km avatar rl" src="../../utils/svg/avatar8.svg" />
+                <img class="km avatar rf" src="../../utils/svg/avatar9.svg" />
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+    &lt;img class="km avatar rs" src="image-url" alt="avatar"/&gt;
+    &lt;img class="km avatar rm" src="image-url" alt="avatar"/&gt;
+    &lt;img class="km avatar rl" src="image-url" alt="avatar"/&gt;
+    &lt;img class="km avatar rf" src="image-url" alt="avatar"/&gt;
+                </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Border To Avatars</h2>
+              <p>
+                You can use <code>br</code> class with colors to add border
+              </p>
+              <div class="comp-demo">
+                <img class="km avatar br" src="../../utils/svg/avatar10.svg" />
+                <img class="km avatar br black" src="../../utils/svg/avatar11.svg" />
+                <img class="km avatar br white" src="../../utils/svg/avatar12.svg" />
+                <img class="km avatar br red" src="../../utils/svg/avatar13.svg" />
+                <img class="km avatar br green" src="../../utils/svg/avatar14.svg" />
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;img class="km avatar br" src="image-url" alt="avatar"/&gt;
+  &lt;img class="km avatar br black" src="image-url" alt="avatar"/&gt;
+  &lt;img class="km avatar br white" src="image-url" alt="avatar"/&gt;
+  &lt;img class="km avatar br red" src="image-url" alt="avatar"/&gt;
+  &lt;img class="km avatar br green" src="image-url" alt="avatar"/&gt;
+                </code></pre>
+              </div>
+            </div>
+          </section>
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="alert">Alert</h2>
+              <p>
+                Alerts are use to show a state to user that something affected to
+                a system, feature or page. We have four types of alerts with icons
+                and button, which can you use adding class
+                <code>km-alert</code> in it.
+              </p>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Status Alert</h2>
+              <p>
+                Use <code>km-error</code> for Error alert,
+                <code>km-update</code> for success, <code>km-report</code> for
+                report, <code>km-info</code> for information.
+              </p>
+              <div class="comp-demo">
+                <div>
+                  <div class="km-error km-alert">
+                    <span class="material-icons"> error </span>
+                    There was an error processing your request
+                  </div>
+                  <div class="km-update km-alert">
+                    <span class="material-icons"> check_circle </span>
+                    Data uploaded to the server. Fire on!
+                  </div>
+                  <div class="km-report km-alert">
+                    <span class="material-icons"> report </span>
+                    Seems your account is about expire, upgrade now
+                  </div>
+                  <div class="km-info km-alert">
+                    <span class="material-icons"> lightbulb </span>
+                    Mangalyaan is going live on 5 November 2013. Get ready!
+                  </div>
+                </div>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;div class="km-error km-alert"&gt; 
+    &lt;span class="material-icons"&gt; error &lt;/span&gt;
+    There was an error processing your request 
+  &lt;/div&gt;
+  &lt;div class="km-update km-alert"&gt;
+    &lt;span class="material-icons"&gt; check_circle &lt;/span&gt;
+    Data uploaded to the server. Fire on! 
+  &lt;/div&gt;
+  &lt;div class="km-report km-alert"&gt; 
+    &lt;span class="material-icons"&gt; report &lt;/span&gt;
+    Seems your account is about expire, upgrade now 
+  &lt;/div&gt;
+  &lt;div class="km-info km-alert"&gt; 
+    &lt;span class="material-icons"&gt; lightbulb &lt;/span&gt;
+    Mangalyaan is going live on 5 November 2013. Get ready! 
+  &lt;/div&gt;
+  </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Status Alert with Border</h2>
+              <p>
+                Add <code>km-error-bd, km-update-bd...</code> etc classes to add
+                outer border alert. <code>-bd</code> stands for border.
+              </p>
+              <div class="comp-demo">
+                <div>
+                  <div class="km-error-bd km-alert">
+                    <span class="material-icons"> error </span>
+                    There was an error processing your request
+                  </div>
+                  <div class="km-update-bd km-alert">
+                    <span class="material-icons"> check_circle </span>
+                    Data uploaded to the server. Fire on!
+                  </div>
+                  <div class="km-report-bd km-alert">
+                    <span class="material-icons"> report </span>
+                    Seems your account is about expire, upgrade now
+                  </div>
+                  <div class="km-info-bd km-alert">
+                    <span class="material-icons"> lightbulb </span>
+                    Mangalyaan is going live on 5 November 2013. Get ready!
+                  </div>
+                </div>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;div class="km-error-bd km-alert"&gt; &lt;span class="material-icons"&gt; error &lt;/span&gt;
+  There was an error processing your request &lt;/div&gt;
+  &lt;div class="km-update-bd km-alert"&gt; &lt;span class="material-icons"&gt; check_circle &lt;/span&gt;
+  Data uploaded to the server. Fire on! &lt;/div&gt;
+  &lt;div class="km-report-bd km-alert"&gt; &lt;span class="material-icons"&gt; report &lt;/span&gt;
+  Seems your account is about expire, upgrade now &lt;/div&gt;
+  &lt;div class="km-info-bd km-alert"&gt; &lt;span class="material-icons"&gt; lightbulb &lt;/span&gt;
+  Mangalyaan is going live on 5 November 2013. Get ready! 
+  &lt;/div&gt;
+  </code></pre>
+              </div>
+            </div>
+  
+            <div class="comp-type">
+              <h2 class="comp-title">Alert with Button</h2>
+              <p>
+                We have close button in this alert type. You can use both default
+                and outer alert types in it using those classes.
+              </p>
+              <div class="comp-demo">
+                <div>
+                  <div class="km-error km-alert">
+                    <span class="material-icons"> error </span>
+                    There was an error processing your request
+                    <span class="material-icons"> close </span>
+                  </div>
+                  <div class="km-update-bd km-alert">
+                    <span class="material-icons">check_circle </span>
+                    There was an error processing your request
+                    <span class="material-icons"> close </span>
+                  </div>
+                </div>
+              </div>
+              <div class="comp-code">
+                <pre><code class="html">
+  &lt;div class="km-error km-alert"&gt; &lt;span class="material-icons"&gt; error &lt;/span&gt;
+    There was an error processing your request &lt;span class="material-icons"&gt; close &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="km-update-bd km-alert"&gt; &lt;span class="material-icons"&gt;check_circle &lt;/span&gt;
+    There was an error processing your request &lt;span class="material-icons"&gt; close &lt;/span&gt;
+  &lt;/div&gt; </code></pre>
+              </div>
+            </div>
+          </section>
+  
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="badge">Badge</h2>
+              <p>
+                Badges can be usefull in showing notification pop-up, user is
+                online or not, on CTA buttons. we have badges on icons, buttons
+                and avatar also.
+              </p>
+            </div>
+  
+          
+
+  
+       
+    </main>
+    <footer></footer>
+  </body>
+</html>
