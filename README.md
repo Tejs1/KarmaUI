@@ -31,7 +31,7 @@
   * [Typography](https://Karmaui.netlify.app/components/text-utils/text-utils.html)
   * [Lists](https://Karmaui.netlify.app/components/lists/lists.html)
   * [Slider](https://Karmaui.netlify.app/components/slider/slider.html)
-  * [Rating](https://Karmaui.netlify.app/components/rating/rating.html)
+  * [Rating](https://karmaui.netlify.app/docs/docs.html)
 
     
 
