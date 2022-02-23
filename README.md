@@ -1,4 +1,3 @@
-<div align="center">
 
   
   ## Karma UI 
@@ -37,4 +36,4 @@
     
 
     
-</div>
+
