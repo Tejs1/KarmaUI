@@ -1,6 +1,7 @@
 
   
   ## Karma UI 
+   * [Karma UI](https://karmaui.netlify.app)
   
   - Karma UI is a Component Library built with HTML and CSS with all the essential components you need for next project.
   
@@ -21,17 +22,16 @@
   
   KarmaUI has the following components. These components will be getting updates, so keep checking out for new varients
   
-  * [Alert](https://karmaui.netlify.app/components/alert/alert.html)
-  * [Avatar](https://Karmaui.netlify.app/components/avatar/avatar.html)
-  * [Badge](https://Karmaui.netlify.app/components/badge/badge.html)
-  * [Buttons](https://Karmaui.netlify.app/components/buttons/buttons.html)
-  * [Card](https://Karmaui.netlify.app/components/card/card.html)
-  * [Image](https://Karmaui.netlify.app/components/image/image.html)
-  * [Inputs](https://Karmaui.netlify.app/components/inputs/inputs.html)
-  * [Typography](https://Karmaui.netlify.app/components/text-utils/text-utils.html)
-  * [Lists](https://Karmaui.netlify.app/components/lists/lists.html)
-  * [Slider](https://Karmaui.netlify.app/components/slider/slider.html)
-  * [Rating](https://karmaui.netlify.app/docs/docs.html)
+  * [Alert](https://karmaui.netlify.app/docs/docs.html#alert)
+  * [Avatar](https://karmaui.netlify.app/docs/docs.html#avatar)
+  * [Badge](https://karmaui.netlify.app/docs/docs.html#badge)
+  * [Buttons](https://karmaui.netlify.app/docs/docs.html#button)
+  * [Card](https://karmaui.netlify.app/docs/docs.html#card)
+  * [Image](https://karmaui.netlify.app/docs/docs.html#image)
+  * [Inputs](https://karmaui.netlify.app/docs/docs.html#input)
+  * [Typography](https://karmaui.netlify.app/docs/docs.html#text-utils)
+  * [Lists](https://karmaui.netlify.app/docs/docs.html#lists)
+
 
     
 
