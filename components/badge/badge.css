@@ -1,7 +1,3 @@
-@import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
-@import url(../avatar/avatar.css);
-@import url(../basic.css);
-
 .km .bubble {
   position: absolute;
   border-radius: 50%;
