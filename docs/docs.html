@@ -64,6 +64,10 @@
           <li><a class="link" href="#text-utils">Text Utilities</a></li>
           <li><a class="link" href="#lists">Lists</a></li>
           <li><a class="link" href="#nav">Navbar</a></li>
+          <li><a class="link" href="#modal">Modal</a></li>
+          <li><a class="link" href="#rating">Rating</a></li>
+          <li><a class="link" href="#toast">Toast</a></li>
+          <li><a class="link" href="#grid">Grid</a></li>
         
         </ul>
       </div>
@@ -1585,7 +1589,7 @@
 
 
             <div class="comp-type">
-              <h2 class="comp-title" id="modal">Live Modal</h2>
+              <h2 class="comp-title">Live Modal</h2>
                 <p>
                 Click on button to watch modal in action. Make sure when you use
                 this modal its position must be absolute to the body.
@@ -1711,18 +1715,15 @@
 
 
 </section>
-<section class="comp-container">
-  <div class="comp-type">
+      <section class="comp-container">    
+            <div class="comp-type">
     <h2 class="comp-title" id="toast">Toast.</h2>
     <p>
       Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems.
     </p>
-  </div>
-
-
-
-  <div class="comp-type">
-    <h2 class="comp-title" id="toast">Toast in action</h2>
+            </div>
+            <div class="comp-type">
+    <h2 class="comp-title" >Toast in action</h2>
     <p>
       Make sure to check class names and Javascript file when you are using it in your site.
     </p>
@@ -1736,10 +1737,8 @@
         </a>
       </div>
     </div>
-    </div>
-
-
-    <div class="comp-code">
+            </div>
+            <div class="comp-code">
   <pre><code class="html">
     &lt;button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
     &lt;div class="km-toast-undo km-toast-action">
@@ -1765,9 +1764,67 @@
 
   </code>
   </pre>
-     </div>
+            </div>
+  
+      </section>
+      <section class="comp-container">
+    <div class="comp-type">
+      <h2 class="comp-title" id="grid">Grids</h2>
+      <p>
+        The CSS Grid Layout Module offers a grid-based layout system, with
+        rows and columns, making it easier to design web pages without having
+        to use floats and positioning.
+      </p>
     </div>
-  </section>
+
+    <div class="comp-type">
+      <h2 class="comp-title">Two col grid</h2>
+      <p>
+        The <code>km-grid</code> class makes the elements display : grid, and
+        the <code>km-grid-2</code> class adds two columns which takes 50%, 50%
+        width of parent element.
+      </p>
+      <div class="comp-demo">
+        <main class="km-grid-2 km-grid">
+          <section class="km-child-1 km-child">Col-1</section>
+          <section class="km-child-2 km-child">Col-2</section>
+        </main>
+      </div>
+      <div class="comp-code">
+        <pre><code class="html">
+          &lt;main class="km-grid-2 km-grid">
+            &lt;section class="km-child-1 km-child">Col-1&lt;/section>
+            &lt;section class="km-child-2 km-child">Col-2&lt;/section>
+          &lt;/main>
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="comp-type">
+      <h2 class="comp-title">Three col grid</h2>
+      <p>
+        The <code>ct-grid</code> class makes the elements display : grid, and
+        the <code>ct-grid-3</code> class adds three columns which takes equal
+        width of parent element.
+      </p>
+      <div class="comp-demo">
+        <main class="km-grid-3 km-grid">
+          <section class="km-child-1 km-child">Col-1</section>
+          <section class="km-child-2 km-child">Col-2</section>
+          <section class="km-child-3 km-child">Col-3</section>
+        </main>
+      </div>
+      <div class="comp-code">
+      <pre><code class="html">
+        &lt;main class="km-grid-3 km-grid">
+          &lt;section class="km-child-1 km-child">Col-1&lt;/section>
+          &lt;section class="km-child-2 km-child">Col-2&lt;/section>
+          &lt;section class="km-child-3 km-child">Col-3&lt;/section>
+        &lt;/main>
+      </code></pre>
+      </div>
+        </div>
+      </section>
        
     </main>
     <footer></footer>
