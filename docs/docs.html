@@ -1613,6 +1613,7 @@
 </div>
 
  <div class="comp-code">
+   <h2>Code : </h2>
  <pre><code class="html js">
   &lt;div class="comp-demo">
     &lt;button class="km-btn km-blue" id="modal-btn">Launch Demo Modal&lt;/button>
@@ -1636,6 +1637,25 @@
   &lt;/div>
  </code></pre>
  </div>
+ <div class="comp-code">
+  <h2>JS Code : </h2>
+  <pre><code class="html js">
+    const modalBtn = document.querySelector("#modal-btn");
+    const ctModal = document.querySelector("#km-modal");
+    const ctModalParent = document.querySelector(".km-modal-dialog");
+    const modalClose = document.querySelector(".km-modal-close");
+    
+    modalBtn.addEventListener("click", () => {
+      ctModal.classList.add("km-modal-active");
+      ctModalParent.classList.add("km-dialog-active");
+    });
+    
+    modalClose.addEventListener("click", () => {
+      ctModal.classList.remove("km-modal-active");
+      ctModalParent.classList.remove("km-dialog-active");
+    });    
+  </code></pre>
+  </div>
  </div>
  </section>
        
