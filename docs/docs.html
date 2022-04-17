@@ -1709,11 +1709,70 @@
   </div>
 
 
-  </div>
+
 </section>
+<section class="comp-container">
+  <div class="comp-type">
+    <h2 class="comp-title" id="toast">Toast.</h2>
+    <p>
+      Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems.
+    </p>
+  </div>
+
+
+
+  <div class="comp-type">
+    <h2 class="comp-title" id="toast">Toast in action</h2>
+    <p>
+      Make sure to check class names and Javascript file when you are using it in your site.
+    </p>
+
+    <div class="comp-demo">
+      <button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
+    <div class="km-toast-undo km-toast-action">
+        <p>Message has been sent to your Ex.</p>
+        <a id="km-undo" class="km-undo">
+        <span class="material-icons">close</span>
+        </a>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="comp-code">
+  <pre><code class="html">
+    &lt;button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
+    &lt;div class="km-toast-undo km-toast-action">
+        &lt;p>Message has been sent to your Ex.&lt;/p>
+        &lt;a id="km-undo" class="km-undo">
+        &lt;span class="material-icons">close&lt;/span>
+        &lt;/a>
+      &lt;/div>
+
+  </code>
+  <code>
+    const toastBtn = document.querySelector("#km-toast-btn");
+    const toast = document.querySelector(".km-toast-action");
+    const undoBtn = document.querySelector("#km-undo");
+    toastBtn.addEventListener("click", () => {
+      toast.classList.add("km-toast-active");
+    });
+    
+    undoBtn.addEventListener("click", () => {
+      toast.classList.remove("km-toast-active");
+    });
+    
+
+  </code>
+  </pre>
+     </div>
+    </div>
+  </section>
        
     </main>
     <footer></footer>
     <script src="/components/modal/modal.js"></script>
+    <script src="/components/rating/rating.js"></script>
+    <script src="/components/toast/toast.js"></script>
   </body>
 </html>
