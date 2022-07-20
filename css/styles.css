@@ -98,10 +98,17 @@ p {
 
 /* navigation */
 
+#nav-div {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #171321;
+  z-index: 10;
+}
 nav {
   font-family: var(--mono);
   font-size: 80%;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 
 nav h1 a {
@@ -116,7 +123,7 @@ nav ul,
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .sidebar ul {
   flex-flow: column wrap;
@@ -170,25 +177,44 @@ nav [class*="fa-"]:hover,
   background-color: var(--hotmag);
 }
 
-main {
+/* Main */
+.doc-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.documentation {
+  top: 6rem;
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-template-areas: "sidebar components";
+  grid-gap: 20px;
+  max-width: 1200px;
+}
+/* main {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   position: relative;
-}
+} */
 .sidebar {
-  padding-left: 3rem;
-  padding-right: 2rem;
+  margin-top: 8rem;
+  grid-area: sidebar;
+  position: fixed;
   border-right: solid 2px white;
-  position: sticky;
+  cursor: pointer;
+  overflow: hidden;
+  overflow-x: hidden;
+  max-height: 90vh;
 }
 
 .components {
-  min-width: 60vh;
-  padding-left: 1rem;
-  display: flex;
-  flex-direction: column;
+  grid-area: components;
+}
+.comp-container {
+  padding-top: 7rem;
+  padding-inline-start: 2rem;
 }
 .comp-code {
   background-color: var(--dkblue);
@@ -222,9 +248,19 @@ footer ul {
   gap: 3rem;
   font-size: 3rem;
 }
-
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: fit-content;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.html {
+  width: min-content;
+}
 @media (min-width: 850px) {
   nav {
+    position: sticky;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -232,5 +268,28 @@ footer ul {
     flex-basis: auto;
     text-align: left;
     margin-right: auto;
+  }
+}
+@media (max-width: 1250px) {
+  .sidebar {
+    left: 0;
+  }
+}
+@media (max-width: 900px) {
+  .documentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .components {
+    max-width: 800px;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .components {
+    max-width: 90vw;
   }
 }
