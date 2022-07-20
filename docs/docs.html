@@ -64,6 +64,10 @@
           <li><a class="link" href="#text-utils">Text Utilities</a></li>
           <li><a class="link" href="#lists">Lists</a></li>
           <li><a class="link" href="#nav">Navbar</a></li>
+          <li><a class="link" href="#modal">Modal</a></li>
+          <li><a class="link" href="#rating">Rating</a></li>
+          <li><a class="link" href="#toast">Toast</a></li>
+          <li><a class="link" href="#grid">Grid</a></li>
         
         </ul>
       </div>
@@ -1572,8 +1576,260 @@
               </div>
             </div>
           </section>
+          
+          <section class="comp-container">
+            <div class="comp-type">
+              <h2 class="comp-title" id="modal">Modal</h2>
+              <p>
+                Modals are a variant of dialog used to present critical
+                information or request user input needed to complete a user’s
+                workflow.
+              </p>
+            </div>
+
+
+            <div class="comp-type">
+              <h2 class="comp-title">Live Modal</h2>
+                <p>
+                Click on button to watch modal in action. Make sure when you use
+                this modal its position must be absolute to the body.
+              </p>
+ 
+  <div class="comp-demo">
+    <button class="km-btn km-blue" id="modal-btn">Launch Demo Modal</button>
+    <div class="km-modal-wrapper">
+      <div class="km-modal-dialog">
+        <div class="km-modal km-modal-action" id="km-modal">
+          <div class="km-modal-header">
+            <h2>Modal title</h2>
+            <span class="material-icons km-modal-close">close</span>
+         </div>
+          <div class="km-modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="km-modal-footer">
+            <button class="km-btn km-blue">Save</button>
+            <button class="km-btn km-gray">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="comp-code">
+   <h2>Code : </h2>
+ <pre><code class="html js">
+  &lt;div class="comp-demo">
+    &lt;button class="km-btn km-blue" id="modal-btn">Launch Demo Modal&lt;/button>
+    &lt;div class="km-modal-wrapper">
+      &lt;div class="km-modal-dialog">
+        &lt;div class="km-modal km-modal-action" id="km-modal">
+          &lt;div class="km-modal-header">
+            &lt;h2>Modal title&lt;/h2>
+            &lt;span class="material-icons km-modal-close">close&lt;/span>
+          &lt;/div>
+          &lt;div class="km-modal-body">
+            &lt;p>Modal body text goes here.&lt;/p>
+          &lt;/div>
+          &lt;div class="km-modal-footer">
+            &lt;button class="km-btn km-blue">Save&lt;/button>
+            &lt;button class="km-btn km-gray">Close&lt;/button>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+ </code></pre>
+ </div>
+ <div class="comp-code">
+  <h2>JS Code : </h2>
+  <pre><code class="html js">
+    const modalBtn = document.querySelector("#modal-btn");
+    const ctModal = document.querySelector("#km-modal");
+    const ctModalParent = document.querySelector(".km-modal-dialog");
+    const modalClose = document.querySelector(".km-modal-close");
+    
+    modalBtn.addEventListener("click", () => {
+      ctModal.classList.add("km-modal-active");
+      ctModalParent.classList.add("km-dialog-active");
+    });
+    
+    modalClose.addEventListener("click", () => {
+      ctModal.classList.remove("km-modal-active");
+      ctModalParent.classList.remove("km-dialog-active");
+    });    
+  </code></pre>
+  </div>
+ </div>
+ </section>
+ <section class="comp-container">
+  <div class="comp-type">
+    <h2 class="comp-title" id="rating">Rating.</h2>
+    <p>
+      Ratings provide insight regarding others' opinions and
+      experiences, and can allow the user to submit a rating of their
+      own.
+    </p>
+
+    <div class="km-rating">
+      <a class="km-star"><span class="material-icons">grade</span></a>
+      <a class="km-star"><span class="material-icons">grade</span></a>
+      <a class="km-star"><span class="material-icons">grade</span></a>
+      <a class="km-star"><span class="material-icons">grade</span></a>
+      <a class="km-star"><span class="material-icons">grade</span></a>
+    </div>
+
+    <div class="comp-code">
+      <pre><code class="html">
+        &lt;div class="km-rating">
+          &lt;a class="km-star">&lt;span class="material-icons">grade&lt;/span>&lt;/a>
+          &lt;a class="km-star">&lt;span class="material-icons">grade&lt;/span>&lt;/a>
+          &lt;a class="km-star">&lt;span class="material-icons">grade&lt;/span>&lt;/a>
+          &lt;a class="km-star">&lt;span class="material-icons">grade&lt;/span>&lt;/a>
+          &lt;a class="km-star">&lt;span class="material-icons">grade&lt;/span>&lt;/a>
+        &lt;/div>
+</code>
+      <code class="html js">
+        const kmRating = document.querySelector(".km-rating");
+        const kmStar = document.querySelectorAll(".km-star");
+        
+        kmStar.forEach((star, index) => {
+          star.addEventListener("click", (e) => {
+            e.preventDefault();
+            kmRating.classList.add("disabled");
+            // console.log(star, index);
+            kmStar.forEach((newStar, newIndex) => {
+              console.log(newStar, newIndex);
+              if (newIndex <= index) {
+                newStar.classList.add("active");
+              }
+            });
+          });
+        });
+        
+</code>
+</pre>
+    </div>
+  </div>
+
+
+
+</section>
+      <section class="comp-container">    
+            <div class="comp-type">
+    <h2 class="comp-title" id="toast">Toast.</h2>
+    <p>
+      Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems.
+    </p>
+            </div>
+            <div class="comp-type">
+    <h2 class="comp-title" >Toast in action</h2>
+    <p>
+      Make sure to check class names and Javascript file when you are using it in your site.
+    </p>
+
+    <div class="comp-demo">
+      <button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
+    <div class="km-toast-undo km-toast-action">
+        <p>Message has been sent to your Ex.</p>
+        <a id="km-undo" class="km-undo">
+        <span class="material-icons">close</span>
+        </a>
+      </div>
+    </div>
+            </div>
+            <div class="comp-code">
+  <pre><code class="html">
+    &lt;button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
+    &lt;div class="km-toast-undo km-toast-action">
+        &lt;p>Message has been sent to your Ex.&lt;/p>
+        &lt;a id="km-undo" class="km-undo">
+        &lt;span class="material-icons">close&lt;/span>
+        &lt;/a>
+      &lt;/div>
+
+  </code>
+  <code>
+    const toastBtn = document.querySelector("#km-toast-btn");
+    const toast = document.querySelector(".km-toast-action");
+    const undoBtn = document.querySelector("#km-undo");
+    toastBtn.addEventListener("click", () => {
+      toast.classList.add("km-toast-active");
+    });
+    
+    undoBtn.addEventListener("click", () => {
+      toast.classList.remove("km-toast-active");
+    });
+    
+
+  </code>
+  </pre>
+            </div>
+  
+      </section>
+      <section class="comp-container">
+    <div class="comp-type">
+      <h2 class="comp-title" id="grid">Grids</h2>
+      <p>
+        The CSS Grid Layout Module offers a grid-based layout system, with
+        rows and columns, making it easier to design web pages without having
+        to use floats and positioning.
+      </p>
+    </div>
+
+    <div class="comp-type">
+      <h2 class="comp-title">Two col grid</h2>
+      <p>
+        The <code>km-grid</code> class makes the elements display : grid, and
+        the <code>km-grid-2</code> class adds two columns which takes 50%, 50%
+        width of parent element.
+      </p>
+      <div class="comp-demo">
+        <main class="km-grid-2 km-grid">
+          <section class="km-child-1 km-child">Col-1</section>
+          <section class="km-child-2 km-child">Col-2</section>
+        </main>
+      </div>
+      <div class="comp-code">
+        <pre><code class="html">
+          &lt;main class="km-grid-2 km-grid">
+            &lt;section class="km-child-1 km-child">Col-1&lt;/section>
+            &lt;section class="km-child-2 km-child">Col-2&lt;/section>
+          &lt;/main>
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="comp-type">
+      <h2 class="comp-title">Three col grid</h2>
+      <p>
+        The <code>ct-grid</code> class makes the elements display : grid, and
+        the <code>ct-grid-3</code> class adds three columns which takes equal
+        width of parent element.
+      </p>
+      <div class="comp-demo">
+        <main class="km-grid-3 km-grid">
+          <section class="km-child-1 km-child">Col-1</section>
+          <section class="km-child-2 km-child">Col-2</section>
+          <section class="km-child-3 km-child">Col-3</section>
+        </main>
+      </div>
+      <div class="comp-code">
+      <pre><code class="html">
+        &lt;main class="km-grid-3 km-grid">
+          &lt;section class="km-child-1 km-child">Col-1&lt;/section>
+          &lt;section class="km-child-2 km-child">Col-2&lt;/section>
+          &lt;section class="km-child-3 km-child">Col-3&lt;/section>
+        &lt;/main>
+      </code></pre>
+      </div>
+        </div>
+      </section>
        
     </main>
     <footer></footer>
+    <script src="/components/modal/modal.js"></script>
+    <script src="/components/rating/rating.js"></script>
+    <script src="/components/toast/toast.js"></script>
   </body>
 </html>

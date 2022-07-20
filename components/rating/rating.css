@@ -1,0 +1,37 @@
+.km-rating {
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.km-rating a {
+  text-decoration: none;
+  color: var(--gray-500);
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 0.1rem;
+  transition: all 250ms ease;
+}
+.km-rating.disabled {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.km-rating:hover a {
+  opacity: 1;
+  color: var(--yellow-500);
+}
+
+.km-rating a:hover {
+  opacity: 1;
+}
+
+.km-rating a:hover ~ a {
+  opacity: 0.5;
+}
+
+.km-star.active {
+  color: var(--yellow-500);
+  opacity: 1;
+}

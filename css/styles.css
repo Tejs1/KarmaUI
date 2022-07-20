@@ -116,7 +116,7 @@ nav ul,
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .sidebar ul {
   flex-flow: column wrap;
@@ -178,14 +178,20 @@ main {
   position: relative;
 }
 .sidebar {
-  padding-left: 3rem;
-  padding-right: 2rem;
   border-right: solid 2px white;
-  position: sticky;
+  position: fixed;
+  left: 200px;
+  width: 240px;
+  padding: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  overflow-x: hidden;
+  max-height: 90vh;
 }
 
 .components {
-  min-width: 60vh;
+  left: 100px;
+  position: relative;
   padding-left: 1rem;
   display: flex;
   flex-direction: column;
