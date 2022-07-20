@@ -20,37 +20,41 @@
     <title>Karma UI</title>
   </head>
 
-  <body>
-    <nav>
-      <ul>
-        <li>
-          <h1>
-            <a href="../index.html">
-              <span class="fas fa-code" aria-hidden="true"></span>
-              Karma UI
-            </a>
-          </h1>
-        </li>
-        <li><a href="">Installation</a></li>
+  <body class="doc-body">
 
-        <li>
-          <a href="" class="button">Documentation</a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/Tejs1/KarmaUI/tree/dev/components"
-            target="_blank"
-          >
-            <span
-              class="fab fa-github-square"
-              id="github"
-              aria-hidden="true"
-            ></span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <main>
+    <div id="nav-div">
+      <nav>
+        <ul>
+          <li>
+            <h1>
+              <a href="../index.html">
+                <span class="fas fa-code" aria-hidden="true"></span>
+                Karma UI
+              </a>
+            </h1>
+          </li>
+          <li><a href="#installation">Installation</a></li>
+  
+          <li>
+            <a href="./docs.html" class="button">Documentation</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Tejs1/KarmaUI/tree/dev/components"
+              target="_blank"
+            >
+              <span
+                class="fab fa-github-square"
+                id="github"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <main class="documentation">
       <div class="sidebar">
         <ul class="comp-list">
           <li><a class="link" href="#installation">Installation</a></li>
@@ -74,7 +78,7 @@
       <div class="components">
         
 <!-- ALL THE COMPONENTS OF THE LIBRARY ARE BELOW  -->
-          <section class="comp-container">
+          <section class="comp-container" id="installation">
             <div class="comp-type">
                 <h2 class="comp-title" >Introduction</h2>
                     <p>
@@ -84,7 +88,7 @@
               <div class="comp-type">
                 <h2 class="comp-title">Installation Guide</h2>
                 <p>
-                  To use KarmaUi in your web interfaces , copy the following link and paste it in <head> tag of your main HTML file.
+                  To use KarmaUi in your web interfaces , copy the following link and paste it in `head` tag of your main HTML file.
                 </p>
     
                 <div class="comp-code">
@@ -93,92 +97,95 @@
                   </code></pre>
                 </div>
               </div>
-            <div class="comp-type">
-              <h2 class="comp-title" id="avatar">Avatar</h2>
-              <p>
-                The <code>Avatar</code> component is used to represent a user, and
-                displays the profile picture, we have avatar in different sizes
-                and shapes. You have to add <code>km-avatar</code> class in
-                <code> img </code>tag to use it as avatar. By default the avatar
-                size is 2.5rem.
-              </p>
-            </div>
-  
-            <div class="comp-type">
-              <h2 class="comp-title">Round Avatar Sizes</h2>
-              <p>
-                You have to apply <code>km avatar</code> class to use
-                 avatar, which has four different sizes
-                <code
-                  >sm | 32px, md | 40px, lg | 64px, xl | 80px ,xxl | 96px</code
-                >.
-              </p>
-              <div class="comp-demo list">
-                <img class="km avatar sm" src="../utils/svg/avatar.svg" />
-                <img class="km avatar" src="../utils/svg/avatar1.svg" />
-                <img class="km avatar lg" src="../utils/svg/avatar2.svg" />
-                <img class="km avatar xl" src="../utils/svg/avatar3.svg" />
-                <img class="km avatar xxl" src="../utils/svg/avatar4.svg" />
-              </div>
-              <div class="comp-code">
-                <pre><code class="html">
-    &lt;img class="km avatar sm" src="image-url"/&gt;
-    &lt;img class="km avatar" src="image-url" /&gt;
-    &lt;img class="km avatar lg" src="image-url" /&gt;
-    &lt;img class="km avatar xl" src="image-url" /&gt;
-    &lt;img class="km avatar xxl" src="image-url" /&gt;
-                </code></pre>
-              </div>
-            </div>
-  
-            <div class="comp-type">
-              <h2 class="comp-title">Squared Avatar</h2>
-              <p>
-                Use <code>rs , rm, rl , rf</code> class to add round border to avatar. 
-              </p>
-              <div class="comp-demo list">
-                <img class="km avatar rs" src="../../utils/svg/avatar6.svg" />
-                <img class="km avatar rm" src="../../utils/svg/avatar7.svg" />
-                <img class="km avatar rl" src="../../utils/svg/avatar8.svg" />
-                <img class="km avatar rf" src="../../utils/svg/avatar9.svg" />
-              </div>
-              <div class="comp-code">
-                <pre><code class="html">
-    &lt;img class="km avatar rs" src="image-url" alt="avatar"/&gt;
-    &lt;img class="km avatar rm" src="image-url" alt="avatar"/&gt;
-    &lt;img class="km avatar rl" src="image-url" alt="avatar"/&gt;
-    &lt;img class="km avatar rf" src="image-url" alt="avatar"/&gt;
-                </code></pre>
-              </div>
-            </div>
-  
-            <div class="comp-type">
-              <h2 class="comp-title">Border To Avatars</h2>
-              <p>
-                You can use <code>br</code> class with colors to add border
-              </p>
-              <div class="comp-demo list">
-                <img class="km avatar br" src="../../utils/svg/avatar10.svg" />
-                <img class="km avatar br black" src="../../utils/svg/avatar11.svg" />
-                <img class="km avatar br white" src="../../utils/svg/avatar12.svg" />
-                <img class="km avatar br red" src="../../utils/svg/avatar13.svg" />
-                <img class="km avatar br green" src="../../utils/svg/avatar14.svg" />
-              </div>
-              <div class="comp-code">
-                <pre><code class="html">
-  &lt;img class="km avatar br" src="image-url" alt="avatar"/&gt;
-  &lt;img class="km avatar br black" src="image-url" alt="avatar"/&gt;
-  &lt;img class="km avatar br white" src="image-url" alt="avatar"/&gt;
-  &lt;img class="km avatar br red" src="image-url" alt="avatar"/&gt;
-  &lt;img class="km avatar br green" src="image-url" alt="avatar"/&gt;
-                </code></pre>
-              </div>
-            </div>
           </section>
-  
-          <section class="comp-container">
+
+          <section class="comp-container" id="avatar">
+                <div class="comp-type">
+                  <h2 class="comp-title" >Avatar</h2>
+                  <p>
+                    The <code>Avatar</code> component is used to represent a user, and
+                    displays the profile picture, we have avatar in different sizes
+                    and shapes. You have to add <code>km-avatar</code> class in
+                    <code> img </code>tag to use it as avatar. By default the avatar
+                    size is 2.5rem.
+                  </p>
+                </div>
+      
+                <div class="comp-type">
+                  <h2 class="comp-title">Round Avatar Sizes</h2>
+                  <p>
+                    You have to apply <code>km avatar</code> class to use
+                     avatar, which has four different sizes
+                    <code
+                      >sm | 32px, md | 40px, lg | 64px, xl | 80px ,xxl | 96px</code
+                    >.
+                  </p>
+                  <div class="comp-demo list">
+                    <img class="km avatar sm" src="../utils/svg/avatar.svg" />
+                    <img class="km avatar" src="../utils/svg/avatar1.svg" />
+                    <img class="km avatar lg" src="../utils/svg/avatar2.svg" />
+                    <img class="km avatar xl" src="../utils/svg/avatar3.svg" />
+                    <img class="km avatar xxl" src="../utils/svg/avatar4.svg" />
+                  </div>
+                  <div class="comp-code">
+                    <pre><code class="html">
+        &lt;img class="km avatar sm" src="image-url"/&gt;
+        &lt;img class="km avatar" src="image-url" /&gt;
+        &lt;img class="km avatar lg" src="image-url" /&gt;
+        &lt;img class="km avatar xl" src="image-url" /&gt;
+        &lt;img class="km avatar xxl" src="image-url" /&gt;
+                    </code></pre>
+                  </div>
+                </div>
+      
+                <div class="comp-type">
+                  <h2 class="comp-title">Squared Avatar</h2>
+                  <p>
+                    Use <code>rs , rm, rl , rf</code> class to add round border to avatar. 
+                  </p>
+                  <div class="comp-demo list">
+                    <img class="km avatar rs" src="../../utils/svg/avatar6.svg" />
+                    <img class="km avatar rm" src="../../utils/svg/avatar7.svg" />
+                    <img class="km avatar rl" src="../../utils/svg/avatar8.svg" />
+                    <img class="km avatar rf" src="../../utils/svg/avatar9.svg" />
+                  </div>
+                  <div class="comp-code">
+                    <pre><code class="html">
+        &lt;img class="km avatar rs" src="image-url" alt="avatar"/&gt;
+        &lt;img class="km avatar rm" src="image-url" alt="avatar"/&gt;
+        &lt;img class="km avatar rl" src="image-url" alt="avatar"/&gt;
+        &lt;img class="km avatar rf" src="image-url" alt="avatar"/&gt;
+                    </code></pre>
+                  </div>
+                </div>
+      
+                <div class="comp-type">
+                  <h2 class="comp-title">Border To Avatars</h2>
+                  <p>
+                    You can use <code>br</code> class with colors to add border
+                  </p>
+                  <div class="comp-demo list">
+                    <img class="km avatar br" src="../../utils/svg/avatar10.svg" />
+                    <img class="km avatar br black" src="../../utils/svg/avatar11.svg" />
+                    <img class="km avatar br white" src="../../utils/svg/avatar12.svg" />
+                    <img class="km avatar br red" src="../../utils/svg/avatar13.svg" />
+                    <img class="km avatar br green" src="../../utils/svg/avatar14.svg" />
+                  </div>
+                  <div class="comp-code">
+                    <pre><code class="html">
+      &lt;img class="km avatar br" src="image-url" alt="avatar"/&gt;
+      &lt;img class="km avatar br black" src="image-url" alt="avatar"/&gt;
+      &lt;img class="km avatar br white" src="image-url" alt="avatar"/&gt;
+      &lt;img class="km avatar br red" src="image-url" alt="avatar"/&gt;
+      &lt;img class="km avatar br green" src="image-url" alt="avatar"/&gt;
+                    </code></pre>
+                  </div>
+                </div>
+          </section>
+         
+          <section class="comp-container" id="alert">
             <div class="comp-type">
-              <h2 class="comp-title" id="alert">Alert</h2>
+              <h2 class="comp-title" >Alert</h2>
               <p>
                 Alerts are use to show a state to user that something affected to
                 a system, feature or page. We have four types of alerts with icons
@@ -309,9 +316,9 @@
             </div>
           </section>
   
-          <section class="comp-container">
+          <section class="comp-container" id="badge">
             <div class="comp-type">
-              <h2 class="comp-title" id="badge">Badge</h2>
+              <h2 class="comp-title" >Badge</h2>
               <p>
                 Badges can be usefull in showing notification pop-up, user is
                 online or not, on CTA buttons. we have badges on icons, buttons
@@ -420,12 +427,11 @@
                </pre>
               </div>
             </div>
-  
-           
-  
-          <section class="comp-container">
+          </section>
+             
+          <section class="comp-container" id="button">
             <div class="comp-type">
-              <h2 class="comp-title" id="button">Button</h2>
+              <h2 class="comp-title" >Button</h2>
               <p>
                 Buttons are most important component of a web page also term as
                 CTA(call to action). We have different types of button to give
@@ -560,9 +566,9 @@
             </div>
           </section>
   
-          <section class="comp-container">
+          <section class="comp-container" id="input">
             <div class="comp-type">
-              <h2 class="comp-title" id="input">Input</h2>
+              <h2 class="comp-title" >Input</h2>
               <p>
                 Inputs are necessary for user interaction with the website. Inputs
                 are used to take information from the user, and then save the data
@@ -793,9 +799,9 @@
             </div>
           </section>
   
-          <section class="comp-container">
+          <section class="comp-container" id="image">
             <div class="comp-type">
-              <h2 class="comp-title" id="image">Image</h2>
+              <h2 class="comp-title" >Image</h2>
               <p>
                 Image Components are used to dsiplay Images on websites, which are
                 screen responsive. They expand upto the width of the container
@@ -901,9 +907,9 @@
             </div>
           </section>
   
-          <section class="comp-container">
+          <section class="comp-container" id="card">
             <div class="comp-type">
-              <h2 class="comp-title" id="card">Card</h2>
+              <h2 class="comp-title" >Card</h2>
               <p>
                 Cards are boxes that display content and actions. They should be
                 easy to scan for relevant and actionable information. Elements,
@@ -1259,9 +1265,9 @@
             </div>
           </section>
   
-          <section class="comp-container">
+          <section class="comp-container" id="text-utils">
             <div class="comp-type">
-              <h2 class="comp-title" id="text-utils">Text Utilities</h2>
+              <h2 class="comp-title" >Text Utilities</h2>
               <p>
                 Text component is the used to render text and paragraphs within an
                 interface. It renders all paragraph, Headings tag by default.
@@ -1348,9 +1354,9 @@
             </div>
           </section>
   
-          <section class="comp-container">
+          <section class="comp-container" id="lists">
             <div class="comp-type">
-              <h2 class="comp-title" id="lists">Lists</h2>
+              <h2 class="comp-title" >Lists</h2>
               <p>
                 List component is used to display list items. It renders a
                 unorder-lists by default. But we also have some ordered as well as
@@ -1504,9 +1510,9 @@
             </div>
           </section>
   
-          <section class="comp-container">
+          <section class="comp-container"  id="nav">
             <div class="comp-type">
-              <h2 class="comp-title" id="nav">Navbar</h2>
+              <h2 class="comp-title">Navbar</h2>
               <p>
                 Navigation bar is first and most important component of any
                 website. Without navbar user will not know which brand is it,
@@ -1577,9 +1583,9 @@
             </div>
           </section>
           
-          <section class="comp-container">
+          <section class="comp-container" id="modal">
             <div class="comp-type">
-              <h2 class="comp-title" id="modal">Modal</h2>
+              <h2 class="comp-title" >Modal</h2>
               <p>
                 Modals are a variant of dialog used to present critical
                 information or request user input needed to complete a user’s
@@ -1602,14 +1608,14 @@
         <div class="km-modal km-modal-action" id="km-modal">
           <div class="km-modal-header">
             <h2>Modal title</h2>
-            <span class="material-icons km-modal-close">close</span>
+            <span class="material-icons">close</span>
          </div>
           <div class="km-modal-body">
             <p>Modal body text goes here.</p>
           </div>
           <div class="km-modal-footer">
             <button class="km-btn km-blue">Save</button>
-            <button class="km-btn km-gray">Close</button>
+            <button class="km-btn km-gray km-modal-close">Close</button>
           </div>
         </div>
       </div>
@@ -1661,10 +1667,11 @@
   </code></pre>
   </div>
  </div>
- </section>
- <section class="comp-container">
+          </section>
+
+          <section class="comp-container" id="rating">
   <div class="comp-type">
-    <h2 class="comp-title" id="rating">Rating.</h2>
+    <h2 class="comp-title" >Rating.</h2>
     <p>
       Ratings provide insight regarding others' opinions and
       experiences, and can allow the user to submit a rating of their
@@ -1714,34 +1721,35 @@
 
 
 
-</section>
-      <section class="comp-container">    
-            <div class="comp-type">
-    <h2 class="comp-title" id="toast">Toast.</h2>
-    <p>
-      Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems.
-    </p>
-            </div>
-            <div class="comp-type">
-    <h2 class="comp-title" >Toast in action</h2>
-    <p>
-      Make sure to check class names and Javascript file when you are using it in your site.
-    </p>
+          </section>
 
-    <div class="comp-demo">
-      <button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
-    <div class="km-toast-undo km-toast-action">
-        <p>Message has been sent to your Ex.</p>
-        <a id="km-undo" class="km-undo">
-        <span class="material-icons">close</span>
-        </a>
-      </div>
-    </div>
+          <section class="comp-container" id="toast">    
+            <div class="comp-type">
+            <h2 class="comp-title" >Toast.</h2>
+            <p>
+                Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems.
+              </p>
+                      </div>
+                      <div class="comp-type">
+              <h2 class="comp-title" >Toast in action</h2>
+              <p>
+                Make sure to check class names and Javascript file when you are using it in your site.
+              </p>
+
+              <div class="comp-demo">
+                <button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
+              <div class="km-toast-undo km-toast-action">
+                  <p>Message has been sent to your Ex.</p>
+                  <a id="km-undo" class="km-undo">
+                  <span class="material-icons">close</span>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="comp-code">
   <pre><code class="html">
-    &lt;button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
-    &lt;div class="km-toast-undo km-toast-action">
+        &lt;button class="km-btn km-blue" id="km-toast-btn">Show Toast</button>
+        &lt;div class="km-toast-undo km-toast-action">
         &lt;p>Message has been sent to your Ex.&lt;/p>
         &lt;a id="km-undo" class="km-undo">
         &lt;span class="material-icons">close&lt;/span>
@@ -1766,65 +1774,66 @@
   </pre>
             </div>
   
-      </section>
-      <section class="comp-container">
-    <div class="comp-type">
-      <h2 class="comp-title" id="grid">Grids</h2>
-      <p>
-        The CSS Grid Layout Module offers a grid-based layout system, with
-        rows and columns, making it easier to design web pages without having
-        to use floats and positioning.
-      </p>
-    </div>
+          </section>
 
-    <div class="comp-type">
-      <h2 class="comp-title">Two col grid</h2>
-      <p>
-        The <code>km-grid</code> class makes the elements display : grid, and
-        the <code>km-grid-2</code> class adds two columns which takes 50%, 50%
-        width of parent element.
-      </p>
-      <div class="comp-demo">
-        <main class="km-grid-2 km-grid">
-          <section class="km-child-1 km-child">Col-1</section>
-          <section class="km-child-2 km-child">Col-2</section>
-        </main>
-      </div>
-      <div class="comp-code">
-        <pre><code class="html">
-          &lt;main class="km-grid-2 km-grid">
-            &lt;section class="km-child-1 km-child">Col-1&lt;/section>
-            &lt;section class="km-child-2 km-child">Col-2&lt;/section>
-          &lt;/main>
-        </code></pre>
-      </div>
-    </div>
+          <section class="comp-container" id="grid">
+              <div class="comp-type">
+                <h2 class="comp-title" >Grids</h2>
+                <p>
+                  The CSS Grid Layout Module offers a grid-based layout system, with
+                  rows and columns, making it easier to design web pages without having
+                  to use floats and positioning.
+                </p>
+              </div>
 
-    <div class="comp-type">
-      <h2 class="comp-title">Three col grid</h2>
-      <p>
-        The <code>ct-grid</code> class makes the elements display : grid, and
-        the <code>ct-grid-3</code> class adds three columns which takes equal
-        width of parent element.
-      </p>
-      <div class="comp-demo">
-        <main class="km-grid-3 km-grid">
-          <section class="km-child-1 km-child">Col-1</section>
-          <section class="km-child-2 km-child">Col-2</section>
-          <section class="km-child-3 km-child">Col-3</section>
-        </main>
-      </div>
-      <div class="comp-code">
-      <pre><code class="html">
-        &lt;main class="km-grid-3 km-grid">
-          &lt;section class="km-child-1 km-child">Col-1&lt;/section>
-          &lt;section class="km-child-2 km-child">Col-2&lt;/section>
-          &lt;section class="km-child-3 km-child">Col-3&lt;/section>
-        &lt;/main>
-      </code></pre>
-      </div>
-        </div>
-      </section>
+              <div class="comp-type">
+                <h2 class="comp-title">Two col grid</h2>
+                <p>
+                  The <code>km-grid</code> class makes the elements display : grid, and
+                  the <code>km-grid-2</code> class adds two columns which takes 50%, 50%
+                  width of parent element.
+                </p>
+                <div class="comp-demo">
+                  <main class="km-grid-2 km-grid">
+                    <section class="km-child-1 km-child">Col-1</section>
+                    <section class="km-child-2 km-child">Col-2</section>
+                  </main>
+                </div>
+                <div class="comp-code">
+                  <pre><code class="html">
+                    &lt;main class="km-grid-2 km-grid">
+                      &lt;section class="km-child-1 km-child">Col-1&lt;/section>
+                      &lt;section class="km-child-2 km-child">Col-2&lt;/section>
+                    &lt;/main>
+                  </code></pre>
+                </div>
+              </div>
+
+              <div class="comp-type">
+                <h2 class="comp-title">Three col grid</h2>
+                <p>
+                  The <code>ct-grid</code> class makes the elements display : grid, and
+                  the <code>ct-grid-3</code> class adds three columns which takes equal
+                  width of parent element.
+                </p>
+                <div class="comp-demo">
+                  <main class="km-grid-3 km-grid">
+                    <section class="km-child-1 km-child">Col-1</section>
+                    <section class="km-child-2 km-child">Col-2</section>
+                    <section class="km-child-3 km-child">Col-3</section>
+                  </main>
+                </div>
+                <div class="comp-code">
+                <pre><code class="html">
+                  &lt;main class="km-grid-3 km-grid">
+                    &lt;section class="km-child-1 km-child">Col-1&lt;/section>
+                    &lt;section class="km-child-2 km-child">Col-2&lt;/section>
+                    &lt;section class="km-child-3 km-child">Col-3&lt;/section>
+                  &lt;/main>
+                </code></pre>
+                </div>
+                  </div>
+          </section>
        
     </main>
     <footer></footer>
