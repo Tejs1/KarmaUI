@@ -1,0 +1,28 @@
+.km-grid {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  border: 1px solid var(--text);
+}
+.km-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.km-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.km-child {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+.km-child-1 {
+  background-color: var(--blue-500);
+}
+.km-child-2 {
+  background-color: var(--green-500);
+}
+.km-child-3 {
+  background-color: var(--orange-500);
+}

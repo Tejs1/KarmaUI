@@ -1,0 +1,72 @@
+.km-modal {
+  padding: 0 1rem;
+  border: 1px solid var(--gray-500);
+  max-width: 320px;
+  min-width: 320px;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.km-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-300);
+}
+.km-modal-close {
+  cursor: pointer;
+}
+
+.km-modal-body {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.km-modal-footer {
+  width: 100%;
+  padding: 0.75rem 0;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.km-modal-footer button {
+  margin: 0.25rem;
+}
+
+.km-modal-action {
+  position: absolute;
+  width: 400px;
+  top: -100px;
+  background-color: var(--body);
+  border: none;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+  transition: all 250ms ease-in;
+}
+.km-modal-active {
+  top: 3rem;
+  transition: all 250ms ease-out;
+}
+
+.km-modal-dialog {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+}
+.km-dialog-active {
+  display: flex;
+  top: 0;
+  left: 0;
+}
+.km-modal {
+  color: var(--gray-300);
+  background-color: var(--gray-900);
+}

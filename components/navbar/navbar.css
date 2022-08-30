@@ -1,6 +1,3 @@
-@import url(../button/button.css);
-@import url(../input/input.css);
-@import url(../badge/badge.css);
 .km-nav-bar {
   padding: 1rem;
   display: flex;
